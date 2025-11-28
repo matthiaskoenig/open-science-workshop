@@ -1,9 +1,5 @@
 # uv {#sec-uv}
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQVr2BOUlvLxxrlR8yBLkJ_S8q1ELey0DdJnaJAc0-gL1lYBFuF6nghgjAMMkSLKTONtIJDXrt6YxHN/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
-
-*Interactive introduction to fast Python environment & package management with **uv***
-
 ## What is **uv**?
 
 **uv** is a next-generation Python package manager and virtual environment tool developed by **Astral** (creators of *Ruff*).
@@ -11,29 +7,25 @@ It aims to replace slow and fragmented Python tooling with a **single, fast, uni
 
 At a glance, uv is:
 
-* ⚡ **Extremely fast**
+* **Extremely fast**
   — built in Rust, 10–100× faster than pip/conda/poetry
-* 🧱 **A unified tool**
+* **A unified tool**
   — environments, dependency resolution, package management, execution — all in one
-* 📦 **Fully compatible with the Python ecosystem**
+* **Fully compatible with the Python ecosystem**
   — pyproject.toml, PEP standards, pip-compatible commands
-* 🛠 **Drop-in replacement for many tools**
+* **Drop-in replacement for many tools**
   — `pip`, `virtualenv`, `pipx`, dependency solvers, executors
-* 🛡 **Reliable & reproducible**
+* **Reliable & reproducible**
   — lockfiles ensure deterministic builds
-* 🧰 **Simple**
+* **Simple**
   — no environment activation needed for most tasks
 
 uv removes a large part of Python’s traditional environment chaos and speeds up everything dramatically.
 
-<!-- 
-<!-- {{< video ./videos/intro.mp4>}}-->
-{{< video https://www.youtube.com/embed/HPIw1wDLmaw >}}
+{{< video https://www.youtube.com/embed/PXO9wfRa3SA >}}
 
----
 
-# 2. Why uv?
-
+## Why uv?
 Traditional Python workflows often suffer from:
 
 * slow dependency resolution (pip, conda)
@@ -55,32 +47,24 @@ Traditional Python workflows often suffer from:
 
 uv is built to make the Python ecosystem feel modern, fast, and predictable.
 
----
+## Install uv
+Installation instructions are available here
+[https://docs.astral.sh/uv/getting-started/installation/](https://docs.astral.sh/uv/getting-started/installation/).
 
-# 3. Install uv
-
-## 🔧 Installation
-
-macOS / Linux:
-
+To test the installation run 
 ```bash
-curl -fsSL https://astral.sh/uv/install.sh | sh
+uv
 ```
+in your terminal.
 
-Windows (PowerShell):
+![uv output](./images/uv_commands.png){#fig-uv-commands width=40%}
 
-```powershell
-irm https://astral.sh/uv/install.ps1 | iex
-```
 
-### ✏️ Notes
+## Clone the Workshop Repository
+To demonstrate some of the functionality of uv we will use the workshop repository.
+Use a git client such as [GitHub Desktop](https://desktop.github.com/download/) to get the latest code.
 
-* Where was uv installed? (`~/.local/bin` or system PATH)
-* Did the script detect your Python version?
-
----
-
-# 4. Clone the Workshop Repository
+Or use the git client via the command line
 
 ```bash
 git clone https://github.com/matthiaskoenig/open-science-workshop.git
@@ -88,13 +72,15 @@ cd open-science-workshop
 ```
 
 
-# 5. Sync All Dependencies
+## Synchronize Dependencies
 
 Create a fully reproducible environment based on `pyproject.toml`:
 
 ```bash
 uv sync
 ```
+
+This installs the python interpreter and all dependencies.
 
 ### ❓ Explore
 
@@ -103,7 +89,7 @@ uv sync
 * Does this replace `pip install -r requirements.txt`?
 
 
-# 6. Inspect the Environment
+## Inspect the Environment
 
 ## 🔍 List installed packages
 
@@ -121,16 +107,14 @@ uv tree
 
 * Which packages are direct dependencies?
 * Which ones are transitive?
-* Is the tree readable?
 
----
 
-# 7. Add, Remove, and Re-Add a Dependency
+## Add, Remove, and Re-Add a Dependency
 
-## 📌 A — Add a new package (example: `rich`)
+## 📌 A — Add a new package (example: `pandas`)
 
 ```bash
-uv add rich
+uv add pandas
 ```
 
 Check:
@@ -140,12 +124,10 @@ uv pip list
 uv tree
 ```
 
----
-
 ## 📌 B — Remove the package
 
 ```bash
-uv remove rich
+uv remove pandas
 ```
 
 Then verify:
@@ -155,19 +137,10 @@ uv pip list
 uv tree
 ```
 
----
-
 ## 📌 C — Add it again (cached!)
 
 ```bash
-uv add rich
-```
-
-Check the environment again:
-
-```bash
-uv pip list
-uv tree
+uv add pandas
 ```
 
 ### ❓ Observations
@@ -175,9 +148,8 @@ uv tree
 * Was the second installation faster? Why?
 * Did the lockfile and pyproject update correctly?
 
----
 
-# 8. Running Python Through uv
+### Running Python Through uv
 
 uv allows running commands in the environment **without activation**:
 
@@ -185,32 +157,29 @@ uv allows running commands in the environment **without activation**:
 uv run python
 ```
 
-or:
+For instance we can execute the `Hello World` script.
 
 ```bash
-uv run python -m pip --version
+uv run src/osw/hello_world.py
+```
+
+In the `pyproject.toml` the script was registered and can be executed via
+```bash
+uv run hello_world
 ```
 
 ### ❓ Explore
 
 * Does uv run inside the correct environment?
-* How does this feel compared to `source .venv/bin/activate`?
+* How does this feel compared to activating the environment via `source .venv/bin/activate`?
 
----
 
-# 9. Summary
+## Further Reading
 
-Write down three improvements uv brings to your workflow:
-
-1.
-2.
-3.
-
----
-
-# 10. Further Reading
-
-* Official site: [https://astral.sh/uv](https://astral.sh/uv)
+* Official site: [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)
 * GitHub: [https://github.com/astral-sh/uv](https://github.com/astral-sh/uv)
 * Ruff formatter/linter (same authors): [https://github.com/astral-sh/ruff](https://github.com/astral-sh/ruff) -->
 
+
+## Slides
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQVr2BOUlvLxxrlR8yBLkJ_S8q1ELey0DdJnaJAc0-gL1lYBFuF6nghgjAMMkSLKTONtIJDXrt6YxHN/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

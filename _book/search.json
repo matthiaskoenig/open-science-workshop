@@ -10,23 +10,43 @@
     ]
   },
   {
-    "objectID": "docs/about.html",
-    "href": "docs/about.html",
-    "title": "About",
-    "section": "",
-    "text": "About the Instructor\nDr. Matthias König is a researcher and educator at Humboldt-Universität zu Berlin, where he leads the Systems Medicine of the Liver group. His work focuses on computational modeling, pharmacokinetics, and digital health education. He is passionate about making complex biomedical processes understandable and accessible through open, interactive learning resources.\nThis course was developed as part of the BUA Open Science Ambassador program to promote Open Science at the Berlin Universities.\nDr. Matthias König\nHumboldt-Universität zu Berlin\nSystems Medicine of the Liver\nhttps://livermetabolism.com",
+    "objectID": "index.html#introduction-motivation",
+    "href": "index.html#introduction-motivation",
+    "title": "Open Science Workshop",
+    "section": "Introduction & Motivation",
+    "text": "Introduction & Motivation\nReproducibility is a cornerstone of modern computational research — yet many everyday workflows in data science, systems biology, and computational modeling remain fragile, siloed, or dependent on personal conventions. Researchers frequently encounter challenges such as:\n\ninconsistent Python environments\nmissing metadata or unclear provenance\nscattered reference collections\nnon-reproducible documents or analysis pipelines\ndifficulty sharing results in open and citable formats\n\nThis workshop addresses these challenges by providing a practical, hands-on introduction to tools that make computational research open, transparent, and verifiably reproducible.\nThe workshop is made possible through support from the Open Science Ambassador Program at the Berlin University Alliance (BUA), which aims to empower researchers to adopt open, FAIR, and reproducible practices across all phases of the research lifecycle.",
     "crumbs": [
-      "About"
+      "Overview"
     ]
   },
   {
-    "objectID": "docs/about.html#about-the-instructor",
-    "href": "docs/about.html#about-the-instructor",
-    "title": "About",
-    "section": "",
-    "text": "Dr. Matthias König",
+    "objectID": "index.html#workshop-goals",
+    "href": "index.html#workshop-goals",
+    "title": "Open Science Workshop",
+    "section": "🎯 Workshop Goals",
+    "text": "🎯 Workshop Goals\nBy the end of the day, participants will:\n\nunderstand core principles of open science and reproducible workflows\nlearn to manage Python environments reliably using uv\ncreate citable research assets using Zenodo\norganize and maintain structured reference libraries with Zotero\nproduce professional, reproducible documents using Typst\npublish integrated analyses and reports using Quarto\nreflect on their own workflow practices through LEGO® Serious Play\ngain confidence to integrate open tools into their daily research",
     "crumbs": [
-      "About"
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#tools-covered-in-the-course",
+    "href": "index.html#tools-covered-in-the-course",
+    "title": "Open Science Workshop",
+    "section": "🧰 Tools Covered in the Course",
+    "text": "🧰 Tools Covered in the Course\n\n\n\n\n\n\nTipTip: Customize Your Learning Path\n\n\n\nThe course does not have to be done linearly—you can explore the content in any order. Choose the learning path that best suits your goals, interests, or current knowledge level. This way, you stay engaged and make the most of your learning experience.\n\n\n\nuv — Reliable Python Environment Management (?sec-uv) A fast, modern tool for Python environments and package management, enabling reproducible computational modelling across machines and teams.\nZenodo — Citable Research Outputs (?sec-zenodo) A platform for sharing datasets, code, models, and workflows with persistent DOIs. Essential for transparency, credit, and long-term accessibility.\nZotero — Reference & Knowledge Management (?sec-zotero) Open-source reference management for organizing literature, annotations, and citations across projects.\nTypst — Modern Document Preparation (?sec-typst) A next-generation typesetting system designed for scientific writing: fast, reproducible, expressive, and accessible.\nQuarto — Reproducible Publishing (?sec-quarto) A unified toolchain for scientific and technical publishing, enabling dynamic reports, manuscripts, slides, and websites.\n\nThe program is shown in ?fig-flyer1 and ?fig-flyer2.",
+    "crumbs": [
+      "Overview"
+    ]
+  },
+  {
+    "objectID": "index.html#program",
+    "href": "index.html#program",
+    "title": "Open Science Workshop",
+    "section": "Program",
+    "text": "Program\nReproducible & Open Workflows for Computational Models\nHumboldt-Universität zu Berlin — 28 November 2025, 10:00–17:00\nFunded by the BUA Open Science Ambassador Program\n \n\n\n\n\n\n\nNoteNote: Help us improve the workshop\n\n\n\nThis course is a work in progress, and we’re always looking for ways to make it better. If you have suggestions, ideas, or feedback on what to improve or how to enhance your learning experience, please don’t hesitate to get in touch. Your input is valuable and appreciated!",
+    "crumbs": [
+      "Overview"
     ]
   },
   {
@@ -34,7 +54,7 @@
     "href": "docs/01_uv.html",
     "title": "uv",
     "section": "",
-    "text": "What is uv?\nInteractive introduction to fast Python environment & package management with uv\nuv is a next-generation Python package manager and virtual environment tool developed by Astral (creators of Ruff). It aims to replace slow and fragmented Python tooling with a single, fast, unified solution.\nAt a glance, uv is:\nuv removes a large part of Python’s traditional environment chaos and speeds up everything dramatically.",
+    "text": "What is uv?\nuv is a next-generation Python package manager and virtual environment tool developed by Astral (creators of Ruff). It aims to replace slow and fragmented Python tooling with a single, fast, unified solution.\nAt a glance, uv is:\nuv removes a large part of Python’s traditional environment chaos and speeds up everything dramatically.",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
     ]
@@ -44,7 +64,7 @@
     "href": "docs/01_uv.html#what-is-uv",
     "title": "uv",
     "section": "",
-    "text": "⚡ Extremely fast — built in Rust, 10–100× faster than pip/conda/poetry\n🧱 A unified tool — environments, dependency resolution, package management, execution — all in one\n📦 Fully compatible with the Python ecosystem — pyproject.toml, PEP standards, pip-compatible commands\n🛠 Drop-in replacement for many tools — pip, virtualenv, pipx, dependency solvers, executors\n🛡 Reliable & reproducible — lockfiles ensure deterministic builds\n🧰 Simple — no environment activation needed for most tasks",
+    "text": "Extremely fast — built in Rust, 10–100× faster than pip/conda/poetry\nA unified tool — environments, dependency resolution, package management, execution — all in one\nFully compatible with the Python ecosystem — pyproject.toml, PEP standards, pip-compatible commands\nDrop-in replacement for many tools — pip, virtualenv, pipx, dependency solvers, executors\nReliable & reproducible — lockfiles ensure deterministic builds\nSimple — no environment activation needed for most tasks",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
     ]
@@ -74,7 +94,7 @@
     "href": "docs/01_uv.html#show-the-dependency-tree",
     "title": "uv",
     "section": "🔍 Show the dependency tree",
-    "text": "🔍 Show the dependency tree\nuv tree\n\n❓ Explore\n\nWhich packages are direct dependencies?\nWhich ones are transitive?\nIs the tree readable?",
+    "text": "🔍 Show the dependency tree\nuv tree\n\n❓ Explore\n\nWhich packages are direct dependencies?\nWhich ones are transitive?",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
     ]
@@ -94,7 +114,7 @@
     "href": "docs/01_uv.html#b-remove-the-package",
     "title": "uv",
     "section": "📌 B — Remove the package",
-    "text": "📌 B — Remove the package\nuv remove rich\nThen verify:\nuv pip list\nuv tree",
+    "text": "📌 B — Remove the package\nuv remove pandas\nThen verify:\nuv pip list\nuv tree",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
     ]
@@ -104,9 +124,29 @@
     "href": "docs/01_uv.html#c-add-it-again-cached",
     "title": "uv",
     "section": "📌 C — Add it again (cached!)",
-    "text": "📌 C — Add it again (cached!)\nuv add rich\nCheck the environment again:\nuv pip list\nuv tree\n\n❓ Observations\n\nWas the second installation faster? Why?\nDid the lockfile and pyproject update correctly?",
+    "text": "📌 C — Add it again (cached!)\nuv add pandas\n\n❓ Observations\n\nWas the second installation faster? Why?\nDid the lockfile and pyproject update correctly?\n\n\n\nRunning Python Through uv\nuv allows running commands in the environment without activation:\nuv run python\nFor instance we can execute the Hello World script.\nuv run src/osw/hello_world.py\nIn the pyproject.toml the script was registered and can be executed via\nuv run hello_world\n\n\n❓ Explore\n\nDoes uv run inside the correct environment?\nHow does this feel compared to activating the environment via source .venv/bin/activate?",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
+    ]
+  },
+  {
+    "objectID": "docs/about.html",
+    "href": "docs/about.html",
+    "title": "About",
+    "section": "",
+    "text": "About the Instructor\nDr. Matthias König is a researcher and educator at Humboldt-Universität zu Berlin, where he leads the Systems Medicine of the Liver group. His work focuses on computational modeling, pharmacokinetics, and digital health education. He is passionate about making complex biomedical processes understandable and accessible through open, interactive learning resources.\nThis course was developed as part of the BUA Open Science Ambassador program to promote Open Science at the Berlin Universities.\nDr. Matthias König\nHumboldt-Universität zu Berlin\nSystems Medicine of the Liver\nhttps://livermetabolism.com",
+    "crumbs": [
+      "About"
+    ]
+  },
+  {
+    "objectID": "docs/about.html#about-the-instructor",
+    "href": "docs/about.html#about-the-instructor",
+    "title": "About",
+    "section": "",
+    "text": "Dr. Matthias König",
+    "crumbs": [
+      "About"
     ]
   },
   {
@@ -170,81 +210,11 @@
     ]
   },
   {
-    "objectID": "index.html#reproducible-open-workflows-for-computational-models",
-    "href": "index.html#reproducible-open-workflows-for-computational-models",
-    "title": "Open Science Workshop",
-    "section": "Reproducible & Open Workflows for Computational Models",
-    "text": "Reproducible & Open Workflows for Computational Models\nHumboldt-Universität zu Berlin — 28 November 2025, 10:00–17:00 Funded by the BUA Open Science Ambassador Program",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#workshop-overview",
-    "href": "index.html#workshop-overview",
-    "title": "Open Science Workshop",
-    "section": "Workshop Overview",
-    "text": "Workshop Overview\nReproducible & Open Workflows for Computational Models\nHumboldt-Universität zu Berlin — 28 November 2025, 10:00–17:00\nFunded by the BUA Open Science Ambassador Program",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#introduction-motivation",
-    "href": "index.html#introduction-motivation",
-    "title": "Open Science Workshop",
-    "section": "Introduction & Motivation",
-    "text": "Introduction & Motivation\nReproducibility is a cornerstone of modern computational research — yet many everyday workflows in data science, systems biology, and computational modeling remain fragile, siloed, or dependent on personal conventions. Researchers frequently encounter challenges such as:\n\ninconsistent Python environments\nmissing metadata or unclear provenance\nscattered reference collections\nnon-reproducible documents or analysis pipelines\ndifficulty sharing results in open and citable formats\n\nThis workshop addresses these challenges by providing a practical, hands-on introduction to tools that make computational research open, transparent, and verifiably reproducible.\nThe workshop is made possible through support from the Open Science Ambassador Program at the Berlin University Alliance (BUA), which aims to empower researchers to adopt open, FAIR, and reproducible practices across all phases of the research lifecycle.",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#workshop-goals",
-    "href": "index.html#workshop-goals",
-    "title": "Open Science Workshop",
-    "section": "🎯 Workshop Goals",
-    "text": "🎯 Workshop Goals\nBy the end of the day, participants will:\n\nunderstand core principles of open science and reproducible workflows\nlearn to manage Python environments reliably using uv\ncreate citable research assets using Zenodo\norganize and maintain structured reference libraries with Zotero\nproduce professional, reproducible documents using Typst\npublish integrated analyses and reports using Quarto\nreflect on their own workflow practices through LEGO® Serious Play\ngain confidence to integrate open tools into their daily research",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#tools-covered-in-the-course",
-    "href": "index.html#tools-covered-in-the-course",
-    "title": "Open Science Workshop",
-    "section": "🧰 Tools Covered in the Course",
-    "text": "🧰 Tools Covered in the Course\n\n\n\n\n\n\nTipTip: Customize Your Learning Path\n\n\n\nThe course does not have to be done linearly—you can explore the content in any order. Choose the learning path that best suits your goals, interests, or current knowledge level. This way, you stay engaged and make the most of your learning experience.\n\n\n\nuv — Reliable Python Environment Management (?sec-uv) A fast, modern tool for Python environments and package management, enabling reproducible computational modelling across machines and teams.\nZenodo — Citable Research Outputs (?sec-zenodo) A platform for sharing datasets, code, models, and workflows with persistent DOIs. Essential for transparency, credit, and long-term accessibility.\nZotero — Reference & Knowledge Management (?sec-zotero) Open-source reference management for organizing literature, annotations, and citations across projects.\nTypst — Modern Document Preparation (?sec-typst) A next-generation typesetting system designed for scientific writing: fast, reproducible, expressive, and accessible.\nQuarto — Reproducible Publishing (?sec-quarto) A unified toolchain for scientific and technical publishing, enabling dynamic reports, manuscripts, slides, and websites.",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#context-the-open-science-ambassador-program-bua",
-    "href": "index.html#context-the-open-science-ambassador-program-bua",
-    "title": "Open Science Workshop",
-    "section": "🌐 Context: The Open Science Ambassador Program (BUA)",
-    "text": "🌐 Context: The Open Science Ambassador Program (BUA)\nThis workshop is part of the Open Science Ambassador Program of the Berlin University Alliance.",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
-    "objectID": "index.html#flyer",
-    "href": "index.html#flyer",
-    "title": "Open Science Workshop",
-    "section": "Flyer",
-    "text": "Flyer\n\n\n\n\n\n\n\n\nNoteNote: Help us improve the course\n\n\n\nThis course is a work in progress, and we’re always looking for ways to make it better. If you have suggestions, ideas, or feedback on what to improve or how to enhance your learning experience, please don’t hesitate to get in touch. Your input is valuable and appreciated!",
-    "crumbs": [
-      "Overview"
-    ]
-  },
-  {
     "objectID": "docs/02_zenodo.html",
     "href": "docs/02_zenodo.html",
     "title": "Zenodo",
     "section": "",
-    "text": "{#sec-zenodo}",
+    "text": "Slides",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Zenodo</span>"
     ]
@@ -254,7 +224,7 @@
     "href": "docs/03_zotero.html",
     "title": "Zotero",
     "section": "",
-    "text": "{#sec-zotero}",
+    "text": "Slides",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zotero</span>"
     ]
@@ -264,7 +234,7 @@
     "href": "docs/04_typst.html",
     "title": "Typst",
     "section": "",
-    "text": "{#sec-typst}",
+    "text": "Slides",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typst</span>"
     ]
@@ -274,29 +244,119 @@
     "href": "docs/05_quarto.html",
     "title": "Quarto",
     "section": "",
-    "text": "{#sec-quarto}",
+    "text": "Slides",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto</span>"
     ]
   },
   {
-    "objectID": "index.html#section",
-    "href": "index.html#section",
-    "title": "Open Science Workshop",
-    "section": "",
-    "text": "Reproducible & Open Workflows for Computational Models\nHumboldt-Universität zu Berlin — 28 November 2025, 10:00–17:00\nFunded by the BUA Open Science Ambassador Program\n\n\n\n \n\n\n\n\n\n\n\n\n\nNoteNote: Help us improve the course\n\n\n\nThis course is a work in progress, and we’re always looking for ways to make it better. If you have suggestions, ideas, or feedback on what to improve or how to enhance your learning experience, please don’t hesitate to get in touch. Your input is valuable and appreciated!",
+    "objectID": "docs/01_uv.html#slides",
+    "href": "docs/01_uv.html#slides",
+    "title": "uv",
+    "section": "Slides",
+    "text": "Slides",
     "crumbs": [
-      "Overview"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
     ]
   },
   {
-    "objectID": "index.html#program",
-    "href": "index.html#program",
-    "title": "Open Science Workshop",
-    "section": "Program",
-    "text": "Program\nReproducible & Open Workflows for Computational Models\nHumboldt-Universität zu Berlin — 28 November 2025, 10:00–17:00\nFunded by the BUA Open Science Ambassador Program\n \n\n\n\n\n\n\nNoteNote: Help us improve the workshop\n\n\n\nThis course is a work in progress, and we’re always looking for ways to make it better. If you have suggestions, ideas, or feedback on what to improve or how to enhance your learning experience, please don’t hesitate to get in touch. Your input is valuable and appreciated!",
+    "objectID": "docs/01_uv.html#why-uv",
+    "href": "docs/01_uv.html#why-uv",
+    "title": "uv",
+    "section": "Why uv?",
+    "text": "Why uv?\nTraditional Python workflows often suffer from:\n\nslow dependency resolution (pip, conda)\nconflicting tools (pip vs conda vs poetry)\nlong environment creation times\n“it works on my machine” problems\nconfusing activation steps\nslow startup of CLIs\nmixing system Python vs environments\n\nuv aims to solve these by offering:\n\na single consistent workflow\nextremely fast operations\nreproducible lockfiles\ncaching to avoid redundant downloads\ncompatibility with existing Python projects\ngreat developer ergonomics\n\nuv is built to make the Python ecosystem feel modern, fast, and predictable.",
     "crumbs": [
-      "Overview"
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
+    ]
+  },
+  {
+    "objectID": "docs/01_uv.html#install-uv",
+    "href": "docs/01_uv.html#install-uv",
+    "title": "uv",
+    "section": "Install uv",
+    "text": "Install uv\nInstallation instructions are available here https://docs.astral.sh/uv/getting-started/installation/.\nTo test the installation run\nuv\nin your terminal.\n\n\n\n\n\n\nFigure 1: uv output",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
+    ]
+  },
+  {
+    "objectID": "docs/01_uv.html#clone-the-workshop-repository",
+    "href": "docs/01_uv.html#clone-the-workshop-repository",
+    "title": "uv",
+    "section": "Clone the Workshop Repository",
+    "text": "Clone the Workshop Repository\nTo demonstrate some of the functionality of uv we will use the workshop repository. Use a git client such as GitHub Desktop to get the latest code.\nOr use the git client via the command line\ngit clone https://github.com/matthiaskoenig/open-science-workshop.git\ncd open-science-workshop",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
+    ]
+  },
+  {
+    "objectID": "docs/01_uv.html#sync-dependencies",
+    "href": "docs/01_uv.html#sync-dependencies",
+    "title": "uv",
+    "section": "Sync Dependencies",
+    "text": "Sync Dependencies\nCreate a fully reproducible environment based on pyproject.toml:\nuv sync\nThis installs the python interpreter and all dependencies.\n\n❓ Explore\n\nHow long did it take?\nWhich folders did uv create? (.venv/, uv.lock)\nDoes this replace pip install -r requirements.txt?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
+    ]
+  },
+  {
+    "objectID": "docs/01_uv.html#inspect-the-environment",
+    "href": "docs/01_uv.html#inspect-the-environment",
+    "title": "uv",
+    "section": "Inspect the Environment",
+    "text": "Inspect the Environment",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
+    ]
+  },
+  {
+    "objectID": "docs/01_uv.html#add-remove-and-re-add-a-dependency",
+    "href": "docs/01_uv.html#add-remove-and-re-add-a-dependency",
+    "title": "uv",
+    "section": "Add, Remove, and Re-Add a Dependency",
+    "text": "Add, Remove, and Re-Add a Dependency",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
+    ]
+  },
+  {
+    "objectID": "docs/01_uv.html#a-add-a-new-package-example-matpl",
+    "href": "docs/01_uv.html#a-add-a-new-package-example-matpl",
+    "title": "uv",
+    "section": "📌 A — Add a new package (example: matpl)",
+    "text": "📌 A — Add a new package (example: matpl)\nuv add rich\nCheck:\nuv pip list\nuv tree",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
+    ]
+  },
+  {
+    "objectID": "docs/01_uv.html#a-add-a-new-package-example-pandas",
+    "href": "docs/01_uv.html#a-add-a-new-package-example-pandas",
+    "title": "uv",
+    "section": "📌 A — Add a new package (example: pandas)",
+    "text": "📌 A — Add a new package (example: pandas)\nuv add pandas\nCheck:\nuv pip list\nuv tree",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
+    ]
+  },
+  {
+    "objectID": "docs/01_uv.html#further-reading",
+    "href": "docs/01_uv.html#further-reading",
+    "title": "uv",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nOfficial site: https://docs.astral.sh/uv/\nGitHub: https://github.com/astral-sh/uv\nRuff formatter/linter (same authors): https://github.com/astral-sh/ruff –&gt;",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
+    ]
+  },
+  {
+    "objectID": "docs/01_uv.html#synchronize-dependencies",
+    "href": "docs/01_uv.html#synchronize-dependencies",
+    "title": "uv",
+    "section": "Synchronize Dependencies",
+    "text": "Synchronize Dependencies\nCreate a fully reproducible environment based on pyproject.toml:\nuv sync\nThis installs the python interpreter and all dependencies.\n\n❓ Explore\n\nHow long did it take?\nWhich folders did uv create? (.venv/, uv.lock)\nDoes this replace pip install -r requirements.txt?",
+    "crumbs": [
+      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
     ]
   }
 ]

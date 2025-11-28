@@ -79,8 +79,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
 <link href="../site_libs/bootstrap/bootstrap-ee351b0b8dc48237a8ed16d58fc2de03.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
-<script src="../site_libs/quarto-contrib/videojs/video.min.js"></script>
-<link href="../site_libs/quarto-contrib/videojs/video-js.css" rel="stylesheet">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -108,17 +106,14 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
     "search-label": "Search"
   }
 }</script>
-<script async="" src="https://hypothes.is/embed.js"></script>
-<script>
-  window.document.addEventListener("DOMContentLoaded", function (_event) {
-    document.body.classList.add('hypothesis-enabled');
-  });
-</script>
 
 
 <meta name="twitter:title" content="uv – Open Science Workshop">
 <meta name="twitter:description" content="">
-<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="https://livermetabolism.com/docs/images/uv_commands.png">
+<meta name="twitter:image-height" content="948">
+<meta name="twitter:image-width" content="1119">
+<meta name="twitter:card" content="summary_large_image">
 </head>
 
 <body class="nav-sidebar floating quarto-light">
@@ -221,42 +216,30 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
    
   <ul>
   <li><a href="#what-is-uv" id="toc-what-is-uv" class="nav-link active" data-scroll-target="#what-is-uv">What is <strong>uv</strong>?</a></li>
-  <li><a href="#why-uv" id="toc-why-uv" class="nav-link" data-scroll-target="#why-uv">2. Why uv?</a></li>
-  <li><a href="#install-uv" id="toc-install-uv" class="nav-link" data-scroll-target="#install-uv">3. Install uv</a>
-  <ul class="collapse">
-  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">🔧 Installation</a>
-  <ul class="collapse">
-  <li><a href="#notes" id="toc-notes" class="nav-link" data-scroll-target="#notes">✏️ Notes</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#clone-the-workshop-repository" id="toc-clone-the-workshop-repository" class="nav-link" data-scroll-target="#clone-the-workshop-repository">4. Clone the Workshop Repository</a></li>
-  <li><a href="#sync-all-dependencies" id="toc-sync-all-dependencies" class="nav-link" data-scroll-target="#sync-all-dependencies">5. Sync All Dependencies</a>
+  <li><a href="#why-uv" id="toc-why-uv" class="nav-link" data-scroll-target="#why-uv">Why uv?</a></li>
+  <li><a href="#install-uv" id="toc-install-uv" class="nav-link" data-scroll-target="#install-uv">Install uv</a></li>
+  <li><a href="#clone-the-workshop-repository" id="toc-clone-the-workshop-repository" class="nav-link" data-scroll-target="#clone-the-workshop-repository">Clone the Workshop Repository</a></li>
+  <li><a href="#synchronize-dependencies" id="toc-synchronize-dependencies" class="nav-link" data-scroll-target="#synchronize-dependencies">Synchronize Dependencies</a>
   <ul class="collapse">
   <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore">❓ Explore</a></li>
   </ul></li>
-  <li><a href="#inspect-the-environment" id="toc-inspect-the-environment" class="nav-link" data-scroll-target="#inspect-the-environment">6. Inspect the Environment</a>
-  <ul class="collapse">
+  <li><a href="#inspect-the-environment" id="toc-inspect-the-environment" class="nav-link" data-scroll-target="#inspect-the-environment">Inspect the Environment</a></li>
   <li><a href="#list-installed-packages" id="toc-list-installed-packages" class="nav-link" data-scroll-target="#list-installed-packages">🔍 List installed packages</a></li>
   <li><a href="#show-the-dependency-tree" id="toc-show-the-dependency-tree" class="nav-link" data-scroll-target="#show-the-dependency-tree">🔍 Show the dependency tree</a>
   <ul class="collapse">
   <li><a href="#explore-1" id="toc-explore-1" class="nav-link" data-scroll-target="#explore-1">❓ Explore</a></li>
   </ul></li>
-  </ul></li>
-  <li><a href="#add-remove-and-re-add-a-dependency" id="toc-add-remove-and-re-add-a-dependency" class="nav-link" data-scroll-target="#add-remove-and-re-add-a-dependency">7. Add, Remove, and Re-Add a Dependency</a>
-  <ul class="collapse">
-  <li><a href="#a-add-a-new-package-example-rich" id="toc-a-add-a-new-package-example-rich" class="nav-link" data-scroll-target="#a-add-a-new-package-example-rich">📌 A — Add a new package (example: <code>rich</code>)</a></li>
+  <li><a href="#add-remove-and-re-add-a-dependency" id="toc-add-remove-and-re-add-a-dependency" class="nav-link" data-scroll-target="#add-remove-and-re-add-a-dependency">Add, Remove, and Re-Add a Dependency</a></li>
+  <li><a href="#a-add-a-new-package-example-pandas" id="toc-a-add-a-new-package-example-pandas" class="nav-link" data-scroll-target="#a-add-a-new-package-example-pandas">📌 A — Add a new package (example: <code>pandas</code>)</a></li>
   <li><a href="#b-remove-the-package" id="toc-b-remove-the-package" class="nav-link" data-scroll-target="#b-remove-the-package">📌 B — Remove the package</a></li>
   <li><a href="#c-add-it-again-cached" id="toc-c-add-it-again-cached" class="nav-link" data-scroll-target="#c-add-it-again-cached">📌 C — Add it again (cached!)</a>
   <ul class="collapse">
   <li><a href="#observations" id="toc-observations" class="nav-link" data-scroll-target="#observations">❓ Observations</a></li>
-  </ul></li>
-  </ul></li>
-  <li><a href="#running-python-through-uv" id="toc-running-python-through-uv" class="nav-link" data-scroll-target="#running-python-through-uv">8. Running Python Through uv</a>
-  <ul class="collapse">
+  <li><a href="#running-python-through-uv" id="toc-running-python-through-uv" class="nav-link" data-scroll-target="#running-python-through-uv">Running Python Through uv</a></li>
   <li><a href="#explore-2" id="toc-explore-2" class="nav-link" data-scroll-target="#explore-2">❓ Explore</a></li>
   </ul></li>
-  <li><a href="#summary" id="toc-summary" class="nav-link" data-scroll-target="#summary">9. Summary</a></li>
-  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">10. Further Reading</a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   </ul>
 </nav>
     </div>
@@ -282,29 +265,23 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </header>
 
 
-<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQVr2BOUlvLxxrlR8yBLkJ_S8q1ELey0DdJnaJAc0-gL1lYBFuF6nghgjAMMkSLKTONtIJDXrt6YxHN/pubembed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
-</iframe>
-<p><em>Interactive introduction to fast Python environment &amp; package management with <strong>uv</strong></em></p>
 <section id="what-is-uv" class="level2">
 <h2 class="anchored" data-anchor-id="what-is-uv">What is <strong>uv</strong>?</h2>
 <p><strong>uv</strong> is a next-generation Python package manager and virtual environment tool developed by <strong>Astral</strong> (creators of <em>Ruff</em>). It aims to replace slow and fragmented Python tooling with a <strong>single, fast, unified solution</strong>.</p>
 <p>At a glance, uv is:</p>
 <ul>
-<li>⚡ <strong>Extremely fast</strong> — built in Rust, 10–100× faster than pip/conda/poetry</li>
-<li>🧱 <strong>A unified tool</strong> — environments, dependency resolution, package management, execution — all in one</li>
-<li>📦 <strong>Fully compatible with the Python ecosystem</strong> — pyproject.toml, PEP standards, pip-compatible commands</li>
-<li>🛠 <strong>Drop-in replacement for many tools</strong> — <code>pip</code>, <code>virtualenv</code>, <code>pipx</code>, dependency solvers, executors</li>
-<li>🛡 <strong>Reliable &amp; reproducible</strong> — lockfiles ensure deterministic builds</li>
-<li>🧰 <strong>Simple</strong> — no environment activation needed for most tasks</li>
+<li><strong>Extremely fast</strong> — built in Rust, 10–100× faster than pip/conda/poetry</li>
+<li><strong>A unified tool</strong> — environments, dependency resolution, package management, execution — all in one</li>
+<li><strong>Fully compatible with the Python ecosystem</strong> — pyproject.toml, PEP standards, pip-compatible commands</li>
+<li><strong>Drop-in replacement for many tools</strong> — <code>pip</code>, <code>virtualenv</code>, <code>pipx</code>, dependency solvers, executors</li>
+<li><strong>Reliable &amp; reproducible</strong> — lockfiles ensure deterministic builds</li>
+<li><strong>Simple</strong> — no environment activation needed for most tasks</li>
 </ul>
 <p>uv removes a large part of Python’s traditional environment chaos and speeds up everything dramatically.</p>
-<!-- 
-<!-- -->
-<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/HPIw1wDLmaw" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
-<hr>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/PXO9wfRa3SA" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
-<section id="why-uv" class="level1">
-<h1>2. Why uv?</h1>
+<section id="why-uv" class="level2">
+<h2 class="anchored" data-anchor-id="why-uv">Why uv?</h2>
 <p>Traditional Python workflows often suffer from:</p>
 <ul>
 <li>slow dependency resolution (pip, conda)</li>
@@ -325,35 +302,36 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <li>great developer ergonomics</li>
 </ul>
 <p>uv is built to make the Python ecosystem feel modern, fast, and predictable.</p>
-<hr>
 </section>
-<section id="install-uv" class="level1">
-<h1>3. Install uv</h1>
-<section id="installation" class="level2">
-<h2 class="anchored" data-anchor-id="installation">🔧 Installation</h2>
-<p>macOS / Linux:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">curl</span> <span class="at">-fsSL</span> https://astral.sh/uv/install.sh <span class="kw">|</span> <span class="fu">sh</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Windows (PowerShell):</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode powershell code-with-copy"><code class="sourceCode powershell"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">irm</span> https<span class="op">://</span>astral<span class="op">.</span><span class="fu">sh</span><span class="op">/</span>uv<span class="op">/</span>install<span class="op">.</span><span class="fu">ps1</span> <span class="op">|</span> <span class="fu">iex</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<section id="notes" class="level3">
-<h3 class="anchored" data-anchor-id="notes">✏️ Notes</h3>
-<ul>
-<li>Where was uv installed? (<code>~/.local/bin</code> or system PATH)</li>
-<li>Did the script detect your Python version?</li>
-</ul>
-<hr>
+<section id="install-uv" class="level2">
+<h2 class="anchored" data-anchor-id="install-uv">Install uv</h2>
+<p>Installation instructions are available here <a href="https://docs.astral.sh/uv/getting-started/installation/">https://docs.astral.sh/uv/getting-started/installation/</a>.</p>
+<p>To test the installation run</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>in your terminal.</p>
+<div id="fig-uv-commands" class="quarto-float quarto-figure quarto-figure-center anchored">
+<figure class="quarto-float quarto-float-fig figure">
+<div aria-describedby="fig-uv-commands-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+<img src="./images/uv_commands.png" class="img-fluid figure-img" style="width:40.0%">
+</div>
+<figcaption class="quarto-float-caption-bottom quarto-float-caption quarto-float-fig" id="fig-uv-commands-caption-0ceaefa1-69ba-4598-a22c-09a6ac19f8ca">
+Figure&nbsp;1: uv output
+</figcaption>
+</figure>
+</div>
 </section>
+<section id="clone-the-workshop-repository" class="level2">
+<h2 class="anchored" data-anchor-id="clone-the-workshop-repository">Clone the Workshop Repository</h2>
+<p>To demonstrate some of the functionality of uv we will use the workshop repository. Use a git client such as <a href="https://desktop.github.com/download/">GitHub Desktop</a> to get the latest code.</p>
+<p>Or use the git client via the command line</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/matthiaskoenig/open-science-workshop.git</span>
+<span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> open-science-workshop</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-</section>
-<section id="clone-the-workshop-repository" class="level1">
-<h1>4. Clone the Workshop Repository</h1>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">git</span> clone https://github.com/matthiaskoenig/open-science-workshop.git</span>
-<span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a><span class="bu">cd</span> open-science-workshop</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-</section>
-<section id="sync-all-dependencies" class="level1">
-<h1>5. Sync All Dependencies</h1>
+<section id="synchronize-dependencies" class="level2">
+<h2 class="anchored" data-anchor-id="synchronize-dependencies">Synchronize Dependencies</h2>
 <p>Create a fully reproducible environment based on <code>pyproject.toml</code>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> sync</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> sync</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>This installs the python interpreter and all dependencies.</p>
 <section id="explore" class="level3">
 <h3 class="anchored" data-anchor-id="explore">❓ Explore</h3>
 <ul>
@@ -363,92 +341,80 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 </section>
 </section>
-<section id="inspect-the-environment" class="level1">
-<h1>6. Inspect the Environment</h1>
+<section id="inspect-the-environment" class="level2">
+<h2 class="anchored" data-anchor-id="inspect-the-environment">Inspect the Environment</h2>
+</section>
 <section id="list-installed-packages" class="level2">
 <h2 class="anchored" data-anchor-id="list-installed-packages">🔍 List installed packages</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> pip list</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> pip list</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="show-the-dependency-tree" class="level2">
 <h2 class="anchored" data-anchor-id="show-the-dependency-tree">🔍 Show the dependency tree</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> tree</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> tree</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <section id="explore-1" class="level3">
 <h3 class="anchored" data-anchor-id="explore-1">❓ Explore</h3>
 <ul>
 <li>Which packages are direct dependencies?</li>
 <li>Which ones are transitive?</li>
-<li>Is the tree readable?</li>
 </ul>
-<hr>
 </section>
 </section>
+<section id="add-remove-and-re-add-a-dependency" class="level2">
+<h2 class="anchored" data-anchor-id="add-remove-and-re-add-a-dependency">Add, Remove, and Re-Add a Dependency</h2>
 </section>
-<section id="add-remove-and-re-add-a-dependency" class="level1">
-<h1>7. Add, Remove, and Re-Add a Dependency</h1>
-<section id="a-add-a-new-package-example-rich" class="level2">
-<h2 class="anchored" data-anchor-id="a-add-a-new-package-example-rich">📌 A — Add a new package (example: <code>rich</code>)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> add rich</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<section id="a-add-a-new-package-example-pandas" class="level2">
+<h2 class="anchored" data-anchor-id="a-add-a-new-package-example-pandas">📌 A — Add a new package (example: <code>pandas</code>)</h2>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> add pandas</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Check:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> pip list</span>
-<span id="cb8-2"><a href="#cb8-2" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> tree</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<hr>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> pip list</span>
+<span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> tree</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="b-remove-the-package" class="level2">
 <h2 class="anchored" data-anchor-id="b-remove-the-package">📌 B — Remove the package</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> remove rich</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> remove pandas</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Then verify:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> pip list</span>
-<span id="cb10-2"><a href="#cb10-2" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> tree</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<hr>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> pip list</span>
+<span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> tree</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
 <section id="c-add-it-again-cached" class="level2">
 <h2 class="anchored" data-anchor-id="c-add-it-again-cached">📌 C — Add it again (cached!)</h2>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> add rich</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>Check the environment again:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> pip list</span>
-<span id="cb12-2"><a href="#cb12-2" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> tree</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> add pandas</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <section id="observations" class="level3">
 <h3 class="anchored" data-anchor-id="observations">❓ Observations</h3>
 <ul>
 <li>Was the second installation faster? Why?</li>
 <li>Did the lockfile and pyproject update correctly?</li>
 </ul>
-<hr>
 </section>
-</section>
-</section>
-<section id="running-python-through-uv" class="level1">
-<h1>8. Running Python Through uv</h1>
+<section id="running-python-through-uv" class="level3">
+<h3 class="anchored" data-anchor-id="running-python-through-uv">Running Python Through uv</h3>
 <p>uv allows running commands in the environment <strong>without activation</strong>:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run python</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
-<p>or:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb14"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb14-1"><a href="#cb14-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run python <span class="at">-m</span> pip <span class="at">--version</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb11"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb11-1"><a href="#cb11-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run python</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>For instance we can execute the <code>Hello World</code> script.</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb12"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb12-1"><a href="#cb12-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run src/osw/hello_world.py</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+<p>In the <code>pyproject.toml</code> the script was registered and can be executed via</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb13"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb13-1"><a href="#cb13-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> run hello_world</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
 <section id="explore-2" class="level3">
 <h3 class="anchored" data-anchor-id="explore-2">❓ Explore</h3>
 <ul>
 <li>Does uv run inside the correct environment?</li>
-<li>How does this feel compared to <code>source .venv/bin/activate</code>?</li>
+<li>How does this feel compared to activating the environment via <code>source .venv/bin/activate</code>?</li>
 </ul>
-<hr>
 </section>
 </section>
-<section id="summary" class="level1">
-<h1>9. Summary</h1>
-<p>Write down three improvements uv brings to your workflow:</p>
-<ol type="1">
-<li></li>
-<li></li>
-<li></li>
-</ol>
-<hr>
-</section>
-<section id="further-reading" class="level1">
-<h1>10. Further Reading</h1>
+<section id="further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
 <ul>
-<li>Official site: <a href="https://astral.sh/uv">https://astral.sh/uv</a></li>
+<li>Official site: <a href="https://docs.astral.sh/uv/">https://docs.astral.sh/uv/</a></li>
 <li>GitHub: <a href="https://github.com/astral-sh/uv">https://github.com/astral-sh/uv</a></li>
 <li>Ruff formatter/linter (same authors): <a href="https://github.com/astral-sh/ruff">https://github.com/astral-sh/ruff</a> –&gt;</li>
 </ul>
+</section>
+<section id="slides" class="level2">
+<h2 class="anchored" data-anchor-id="slides">Slides</h2>
+<iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQVr2BOUlvLxxrlR8yBLkJ_S8q1ELey0DdJnaJAc0-gL1lYBFuF6nghgjAMMkSLKTONtIJDXrt6YxHN/pubembed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
+</iframe>
 
 
 </section>
@@ -867,7 +833,6 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   </div>
 </nav>
 </div> <!-- /content -->
-<script>videojs(video_shortcode_videojs_video1);</script>
 
 
 

@@ -32,7 +32,7 @@ book:
     search: true
 
 comments:
- hypothesis: true
+ hypothesis: false
 
 # bibliography: references.json
 

@@ -46,14 +46,15 @@ The course does not have to be done linearly—you can explore the content in an
 - **Quarto — Reproducible Publishing** (@sec-quarto)
   A unified toolchain for scientific and technical publishing, enabling dynamic reports, manuscripts, slides, and websites.
 
+The program is shown in @fig-flyer1 and @fig-flyer2.
 
 ## Program
 **Reproducible & Open Workflows for Computational Models**  
 Humboldt-Universität zu Berlin — 28 November 2025, 10:00–17:00  
 Funded by the BUA Open Science Ambassador Program
 
-![Flyer 1.](./docs/flyer/flyer1.png ){#fig-flyer1 width=40%}
-![Flyer 2.](./docs/flyer/flyer2.png ){#fig-flyer2 width=40%}
+![Flyer 1.](./docs/flyer/flyer1.png){#fig-flyer1 width=40%}
+![Flyer 2.](./docs/flyer/flyer2.png){#fig-flyer2 width=40%}
 
 
 ::: {.callout-note}
