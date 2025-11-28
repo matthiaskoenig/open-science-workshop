@@ -1,0 +1,52 @@
+project:
+  type: book
+  output-dir: _book
+
+# number-depth: 0
+
+book:
+  title: "Open Science Workshop"
+  author: "Matthias König"
+  date: "11/28/2025"
+  chapters:
+    - index.qmd
+    - ./docs/01_uv.qmd
+    - ./docs/02_zenodo.qmd
+    - ./docs/03_zotero.qmd
+    - ./docs/04_typst.qmd
+    - ./docs/05_quarto.qmd
+    - ./docs/about.qmd
+    - ./docs/code_of_conduct.qmd
+
+  favicon: ./docs/images/osw.png
+  twitter-card: true
+  repo-url: https://github.com/matthiaskoenig/open-science-workshop.git
+  site-url: https://livermetabolism.com
+  # downloads: [pdf]
+  
+  sidebar:
+    contents: auto
+    style: "floating"
+    logo: ./docs/images/osw.png
+    collapse-level: 3
+    search: true
+
+comments:
+ hypothesis: true
+
+# bibliography: references.json
+
+format:
+  html:
+    theme: cosmo
+    # cover-image: images/banner.png
+  # pdf:
+  #   documentclass: scrreprt
+  #   # cover-image: images/banner.png
+
+  # epub:
+  #   default
+    # cover-image: images/banner.png
+  
+  # typst:
+  #   default

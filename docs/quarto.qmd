@@ -1,3 +1,10 @@
-# Basic Workflow
+# quarto {.unnumbered}
 
 Quarto .qmd files contain a combination of markdown and executable code cells. Here’s what it might look like in VS Code to edit and preview a .qmd file
+
+
+Setup environment with uv
+```
+uv sync
+```
+

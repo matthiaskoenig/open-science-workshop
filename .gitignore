@@ -1,1 +1,6 @@
 .idea
+/.quarto/
+**/*.quarto_ipynb
+__pycache__
+*.pyc
+src/open_science_workshop.egg-info

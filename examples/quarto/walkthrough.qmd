@@ -12,7 +12,6 @@ Markdown is an easy to read and write text format:
 - Learn more at: <https://quarto.org/docs/authoring/>
 
 ## Code Cell
-
 Here is a Python code cell:
 
 ```{python}
