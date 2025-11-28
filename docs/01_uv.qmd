@@ -91,13 +91,13 @@ This installs the python interpreter and all dependencies.
 
 ## Inspect the Environment
 
-## 🔍 List installed packages
+### 🔍 List installed packages
 
 ```bash
 uv pip list
 ```
 
-## 🔍 Show the dependency tree
+### 🔍 Show the dependency tree
 
 ```bash
 uv tree
@@ -109,9 +109,9 @@ uv tree
 * Which ones are transitive?
 
 
-## Add, Remove, and Re-Add a Dependency
+### Add, Remove, and Re-Add a Dependency
 
-## 📌 A — Add a new package (example: `pandas`)
+### A — Add a new package (example: `pandas`)
 
 ```bash
 uv add pandas
@@ -124,7 +124,7 @@ uv pip list
 uv tree
 ```
 
-## 📌 B — Remove the package
+### B — Remove the package
 
 ```bash
 uv remove pandas
@@ -137,7 +137,7 @@ uv pip list
 uv tree
 ```
 
-## 📌 C — Add it again (cached!)
+### C — Add it again (cached!)
 
 ```bash
 uv add pandas
@@ -178,7 +178,7 @@ uv run hello_world
 
 * Official site: [https://docs.astral.sh/uv/](https://docs.astral.sh/uv/)
 * GitHub: [https://github.com/astral-sh/uv](https://github.com/astral-sh/uv)
-* Ruff formatter/linter (same authors): [https://github.com/astral-sh/ruff](https://github.com/astral-sh/ruff) -->
+* DataCamp Tutorial: [https://www.datacamp.com/tutorial/python-uv?dc_referrer=https%3A%2F%2Fduckduckgo.com%2F](https://www.datacamp.com/tutorial/python-uv?dc_referrer=https%3A%2F%2Fduckduckgo.com%2F)
 
 
 ## Slides
