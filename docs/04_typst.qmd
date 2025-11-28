@@ -1,4 +1,109 @@
 # Typst {#sec-typst}
 
+## What is **Typst**?
+
+**Typst** is a modern, fast, and expressive typesetting system designed for scientific and technical writing.
+Created as a next-generation alternative to LaTeX, Typst brings together **beautiful typography**, **a clean declarative syntax**, and **full programmability**—all with instant preview and reproducible builds.
+
+At a glance, Typst is:
+
+* **Fast and interactive**
+  — instant rendering, live preview, no compilation delays
+* **Easy to learn**
+  — clean, markdown-like syntax with intuitive layout rules
+* **Programmable**
+  — functions, variables, conditional logic, and reusable components
+* **Perfect for scientific writing**
+  — equations, figures, citations, cross-references, bibliographies
+* **Reproducible & portable**
+  — lightweight files, deterministic rendering, excellent integration with version control
+* **Modern and open**
+  — open-source, actively developed, and built for today’s research workflows
+* **Flexible**
+  — templates, custom styles, academic layouts, posters, reports, manuscripts
+
+Typst provides the precision of LaTeX with the readability of Markdown—making high-quality scientific documents easier, faster, and more reproducible.
+
+{{< video https://www.youtube.com/embed/kI2e0o3sIVM >}}
+
+## Why **Typst**?
+
+Traditional scientific writing tools often create friction: LaTeX can be overly complex, Word is hard to version control, and PDF exports often break reproducibility. Typst solves these issues by providing a modern, unified, and researcher-friendly writing platform.
+
+Typst is valuable because it offers:
+
+* **A gentle learning curve**
+  — write immediately; extend only when needed
+* **Clean, readable syntax for collaboration**
+  — ideal for teams, students, and reproducible teaching materials
+* **Beautiful default typography**
+  — professional results without wrestling with packages
+* **Reliable citations & references**
+  — integrates seamlessly with Zotero / Better BibTeX
+* **Transparent document structure**
+  — no hidden formatting, no brittle copy-paste styles
+* **Ease of sharing & archiving**
+  — plain-text `.typ` documents work perfectly with Git and Zenodo
+* **Integration with Quarto, GitHub, and modern workflows**
+  — perfect for dynamic documents, reproducible pipelines, or scientific publishing
+
+In short, **Typst gives you professional-quality documents without LaTeX’s complexity and without Word’s unpredictability**, making it ideal for open and reproducible research.
+
+
+## Exercise: **Create a Simple Typst Document**
+
+**Goal:**
+Learn how to create and compile a basic Typst file.
+
+**Instructions:**
+
+1. Install Typst or use **typst.app** (browser version).
+
+2. Create a new file: `main.typ`
+
+3. Work through the "Writing in Typst" tutorial: [https://typst.app/docs/tutorial/writing-in-typst/](https://typst.app/docs/tutorial/writing-in-typst/)
+
+4. Render the document using the Typst compiler or online preview.
+
+**Outcome:**
+You have created a fully functioning Typst document.
+
+
+## Exercise: **Use Zotero / BBT with Typst**
+
+**Goal:**
+Connect your reference manager to Typst.
+
+**Instructions:**
+
+1. Export your Zotero library (Better BibTeX → `references.bib`).
+
+2. In your `main.typ`, add:
+
+   ```typst
+   #bibliography("references.bib")
+   ```
+
+3. Cite an entry e.g. `@smith2020`, `@doe2023`
+
+4. Render the document and verify the bibliography at the end.
+
+**Outcome:**
+You can now cite literature reliably and reproducibly within Typst.
+
+## Further Reading
+
+* **Typst Documentation**
+  [https://typst.app/docs/](https://typst.app/docs/)
+* **Typst Tutorial**
+  [https://typst.app/docs/tutorial/](https://typst.app/docs/tutorial/)
+* **Typst for Academic Writing**
+  [https://typst.app/docs/reference/](https://typst.app/docs/reference/)
+* **Typst + Zotero (Better BibTeX)**
+  [https://typst.app/docs/tutorial/bibliographies/](https://typst.app/docs/tutorial/bibliographies/)
+* **Typst GitHub Repository**
+  [https://github.com/typst/typst](https://github.com/typst/typst)
+
+
 ## Slides
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTYmiYhhTSUnVwIdTmMkodJKSm0NHvdU2kECU_QQN4lRA9GH3I9DgMJTwBjVFiinC1-F52oeBxESuR1/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
