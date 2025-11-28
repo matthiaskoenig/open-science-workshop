@@ -354,6 +354,66 @@
     "href": "docs/05_quarto.html",
     "title": "Quarto",
     "section": "",
+    "text": "What is Quarto?\nQuarto is an open-source scientific and technical publishing system that lets you create beautiful, reproducible, and fully integrated documents—from simple Markdown reports to complex books, websites, interactive notebooks, and presentations.\nDeveloped by Posit (formerly RStudio), Quarto is designed to unify code, text, figures, citations, and computational workflows in a single, transparent format.\nAt a glance, Quarto is:\nQuarto brings together what researchers often struggle to combine: documentation, computation, citation, formatting, and publishing—into one coherent workflow.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "docs/05_quarto.html#what-is-quarto",
+    "href": "docs/05_quarto.html#what-is-quarto",
+    "title": "Quarto",
+    "section": "",
+    "text": "Reproducible — integrates code execution (Python, R, Julia, Observable JS), ensuring outputs and figures are always up to date\nFlexible — produce PDFs, HTML documents, slides, books, scientific manuscripts, apps, dashboards, and websites\nSimple — Markdown-based syntax that remains readable even without rendering\nFully programmable — supports Jupyter, knitr, and executable notebooks\nIntegrated with the scientific ecosystem — works seamlessly with Zotero, BibTeX, Typst, Pandoc, Git, and Zenodo\nOpen and extensible — customizable templates, filters, and Lua extensions\nPublication-ready — ideal for reproducible reports, dynamic analyses, teaching materials, and scientific communication",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "docs/05_quarto.html#why-quarto",
+    "href": "docs/05_quarto.html#why-quarto",
+    "title": "Quarto",
+    "section": "Why Quarto?",
+    "text": "Why Quarto?\nScientific writing is often fragmented: code in Jupyter notebooks, figures exported by hand, citations in reference managers, and reports assembled in Word or LaTeX. This leads to broken pipelines, inconsistent results, and irreproducible outputs.\nQuarto solves these problems by providing:\n\nExecutable documents — the analysis, text, and figures live in the same file\nReproducible workflows — every figure and result can be regenerated with one command\nTransparent provenance — anyone can see exactly how results were produced\nPortable documents — the same .qmd source can render to HTML, PDF, DOCX, slides, and more\nVersion control compatibility — plain-text files integrate perfectly with Git\nEasy collaboration — clean syntax, consistent formatting, and shared environments\nOpen science readiness — perfect for publishing reproducible reports on GitHub Pages, Zenodo, or institutional archives\n\nIn short: Quarto turns scientific documents into reproducible research artifacts, strengthening transparency and accelerating collaboration.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "docs/05_quarto.html#exercise-create-a-basic-quarto-document",
+    "href": "docs/05_quarto.html#exercise-create-a-basic-quarto-document",
+    "title": "Quarto",
+    "section": "Exercise: Create a Basic Quarto Document",
+    "text": "Exercise: Create a Basic Quarto Document\nGoal: Learn how to create a simple reproducible Quarto report.\nInstructions:\n\nOpen the example examples/quarto/report.qmd and instect the content.\nRender the document:\nuv quarto render examples/quarto/python_example.qmd\nUse the preview functionality:\nuv quarto preview examples/quarto/python_example.qmd\n\nOutcome: You have created a fully reproducible report with integrated code and figures.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "docs/05_quarto.html#exercise-cite-references-with-zotero-bbt",
+    "href": "docs/05_quarto.html#exercise-cite-references-with-zotero-bbt",
+    "title": "Quarto",
+    "section": "Exercise: Cite References with Zotero / BBT",
+    "text": "Exercise: Cite References with Zotero / BBT\nGoal: Use your Zotero library inside Quarto.\nInstructions:\n\nExport your Zotero collection via Better BibTeX as references.bib.\nIn your YAML header, add:\nbibliography: references.bib\nCite something in the text:\nAs shown in @smith2021, citation management is seamless.\nRender the document and verify the bibliography appears at the end.\n\nOutcome: You can now use structured, reproducible citations in Quarto.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "docs/05_quarto.html#further-reading",
+    "href": "docs/05_quarto.html#further-reading",
+    "title": "Quarto",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nQuarto Documentation https://quarto.org/docs/\nQuarto Guide for Python https://quarto.org/docs/computations/python.html\nAuthoring with Citations https://quarto.org/docs/authoring/citations.html\nQuarto + Jupyter Notebooks https://quarto.org/docs/computations/jupyter.html\nPublishing Quarto Projects https://quarto.org/docs/publishing/\nQuarto GitHub Repository https://github.com/quarto-dev/quarto-cli",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "docs/05_quarto.html#slides",
+    "href": "docs/05_quarto.html#slides",
+    "title": "Quarto",
+    "section": "Slides",
     "text": "Slides",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto</span>"

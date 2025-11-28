@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -74,6 +109,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta name="twitter:title" content="Quarto – Open Science Workshop">
+<meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -176,7 +212,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link active" data-scroll-target="#what-is-quarto">What is <strong>Quarto</strong>?</a></li>
+  <li><a href="#why-quarto" id="toc-why-quarto" class="nav-link" data-scroll-target="#why-quarto">Why <strong>Quarto</strong>?</a></li>
+  <li><a href="#exercise-create-a-basic-quarto-document" id="toc-exercise-create-a-basic-quarto-document" class="nav-link" data-scroll-target="#exercise-create-a-basic-quarto-document">Exercise: <strong>Create a Basic Quarto Document</strong></a></li>
+  <li><a href="#exercise-cite-references-with-zotero-bbt" id="toc-exercise-cite-references-with-zotero-bbt" class="nav-link" data-scroll-target="#exercise-cite-references-with-zotero-bbt">Exercise: <strong>Cite References with Zotero / BBT</strong></a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   </ul>
 </nav>
     </div>
@@ -202,6 +243,76 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="what-is-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-quarto">What is <strong>Quarto</strong>?</h2>
+<p><strong>Quarto</strong> is an open-source scientific and technical publishing system that lets you create <strong>beautiful, reproducible, and fully integrated documents</strong>—from simple Markdown reports to complex books, websites, interactive notebooks, and presentations.</p>
+<p>Developed by <strong>Posit</strong> (formerly RStudio), Quarto is designed to unify code, text, figures, citations, and computational workflows in a single, transparent format.</p>
+<p>At a glance, Quarto is:</p>
+<ul>
+<li><strong>Reproducible</strong> — integrates code execution (Python, R, Julia, Observable JS), ensuring outputs and figures are always up to date</li>
+<li><strong>Flexible</strong> — produce PDFs, HTML documents, slides, books, scientific manuscripts, apps, dashboards, and websites</li>
+<li><strong>Simple</strong> — Markdown-based syntax that remains readable even without rendering</li>
+<li><strong>Fully programmable</strong> — supports Jupyter, knitr, and executable notebooks</li>
+<li><strong>Integrated with the scientific ecosystem</strong> — works seamlessly with Zotero, BibTeX, Typst, Pandoc, Git, and Zenodo</li>
+<li><strong>Open and extensible</strong> — customizable templates, filters, and Lua extensions</li>
+<li><strong>Publication-ready</strong> — ideal for reproducible reports, dynamic analyses, teaching materials, and scientific communication</li>
+</ul>
+<p>Quarto brings together what researchers often struggle to combine: documentation, computation, citation, formatting, and publishing—into one coherent workflow.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/_20US068pzk" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="why-quarto" class="level2">
+<h2 class="anchored" data-anchor-id="why-quarto">Why <strong>Quarto</strong>?</h2>
+<p>Scientific writing is often fragmented: code in Jupyter notebooks, figures exported by hand, citations in reference managers, and reports assembled in Word or LaTeX. This leads to broken pipelines, inconsistent results, and irreproducible outputs.</p>
+<p>Quarto solves these problems by providing:</p>
+<ul>
+<li><strong>Executable documents</strong> — the analysis, text, and figures live in the same file</li>
+<li><strong>Reproducible workflows</strong> — every figure and result can be regenerated with one command</li>
+<li><strong>Transparent provenance</strong> — anyone can see exactly how results were produced</li>
+<li><strong>Portable documents</strong> — the same <code>.qmd</code> source can render to HTML, PDF, DOCX, slides, and more</li>
+<li><strong>Version control compatibility</strong> — plain-text files integrate perfectly with Git</li>
+<li><strong>Easy collaboration</strong> — clean syntax, consistent formatting, and shared environments</li>
+<li><strong>Open science readiness</strong> — perfect for publishing reproducible reports on GitHub Pages, Zenodo, or institutional archives</li>
+</ul>
+<p>In short: <strong>Quarto turns scientific documents into reproducible research artifacts</strong>, strengthening transparency and accelerating collaboration.</p>
+</section>
+<section id="exercise-create-a-basic-quarto-document" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-create-a-basic-quarto-document">Exercise: <strong>Create a Basic Quarto Document</strong></h2>
+<p><strong>Goal:</strong> Learn how to create a simple reproducible Quarto report.</p>
+<p><strong>Instructions:</strong></p>
+<ol type="1">
+<li><p>Open the example <code>examples/quarto/report.qmd</code> and instect the content.</p></li>
+<li><p>Render the document:</p>
+<pre><code>uv quarto render examples/quarto/python_example.qmd</code></pre></li>
+<li><p>Use the preview functionality:</p>
+<pre><code>uv quarto preview examples/quarto/python_example.qmd</code></pre></li>
+</ol>
+<p><strong>Outcome:</strong> You have created a fully reproducible report with integrated code and figures.</p>
+</section>
+<section id="exercise-cite-references-with-zotero-bbt" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-cite-references-with-zotero-bbt">Exercise: <strong>Cite References with Zotero / BBT</strong></h2>
+<p><strong>Goal:</strong> Use your Zotero library inside Quarto.</p>
+<p><strong>Instructions:</strong></p>
+<ol type="1">
+<li><p>Export your Zotero collection via <strong>Better BibTeX</strong> as <code>references.bib</code>.</p></li>
+<li><p>In your YAML header, add:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Cite something in the text:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>As shown in @smith2021, citation management is seamless.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Render the document and verify the bibliography appears at the end.</p></li>
+</ol>
+<p><strong>Outcome:</strong> You can now use structured, reproducible citations in Quarto.</p>
+</section>
+<section id="further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>Quarto Documentation</strong> <a href="https://quarto.org/docs/">https://quarto.org/docs/</a></li>
+<li><strong>Quarto Guide for Python</strong> <a href="https://quarto.org/docs/computations/python.html">https://quarto.org/docs/computations/python.html</a></li>
+<li><strong>Authoring with Citations</strong> <a href="https://quarto.org/docs/authoring/citations.html">https://quarto.org/docs/authoring/citations.html</a></li>
+<li><strong>Quarto + Jupyter Notebooks</strong> <a href="https://quarto.org/docs/computations/jupyter.html">https://quarto.org/docs/computations/jupyter.html</a></li>
+<li><strong>Publishing Quarto Projects</strong> <a href="https://quarto.org/docs/publishing/">https://quarto.org/docs/publishing/</a></li>
+<li><strong>Quarto GitHub Repository</strong> <a href="https://github.com/quarto-dev/quarto-cli">https://github.com/quarto-dev/quarto-cli</a></li>
+</ul>
+</section>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZ_fYjCddkTOANpYXNUF78DtKp-nNUeNIlxvaD-VoTotmVIEdA3aIUXjzKVT8OFroaTR3PzQmC7qDN/pubembed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">
