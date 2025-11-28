@@ -14,7 +14,7 @@
     "href": "index.html#introduction-motivation",
     "title": "Open Science Workshop",
     "section": "Introduction & Motivation",
-    "text": "Introduction & Motivation\nReproducibility is a cornerstone of modern computational research — yet many everyday workflows in data science, systems biology, and computational modeling remain fragile, siloed, or dependent on personal conventions. Researchers frequently encounter challenges such as:\n\ninconsistent Python environments\nmissing metadata or unclear provenance\nscattered reference collections\nnon-reproducible documents or analysis pipelines\ndifficulty sharing results in open and citable formats\n\nThis workshop addresses these challenges by providing a practical, hands-on introduction to tools that make computational research open, transparent, and verifiably reproducible.\nThe workshop is made possible through support from the Open Science Ambassador Program at the Berlin University Alliance (BUA), which aims to empower researchers to adopt open, FAIR, and reproducible practices across all phases of the research lifecycle.",
+    "text": "Introduction & Motivation\nReproducibility is a cornerstone of modern computational research — yet many everyday workflows in data science, systems biology, and computational modeling remain fragile, siloed, or dependent on personal conventions. Researchers frequently encounter challenges such as:\n\ninconsistent Python environments\nmissing metadata or unclear provenance\nscattered reference collections\nnon-reproducible documents or analysis pipelines\ndifficulty sharing results in open and citable formats\n\nThis workshop addresses these challenges by providing a practical, hands-on introduction to tools that make computational research open, transparent, and verifiably reproducible.\nThe workshop is made possible through support from the Open Science Ambassador Program at the Berlin University Alliance (BUA), which aims to empower researchers to adopt open, FAIR, and reproducible practices across all phases of the research lifecycle.\nAll workshop material is available from https://github.com/matthiaskoenig/open-science-workshop.",
     "crumbs": [
       "Overview"
     ]
@@ -375,6 +375,16 @@
     "title": "Quarto",
     "section": "Why Quarto?",
     "text": "Why Quarto?\nScientific writing is often fragmented: code in Jupyter notebooks, figures exported by hand, citations in reference managers, and reports assembled in Word or LaTeX. This leads to broken pipelines, inconsistent results, and irreproducible outputs.\nQuarto solves these problems by providing:\n\nExecutable documents — the analysis, text, and figures live in the same file\nReproducible workflows — every figure and result can be regenerated with one command\nTransparent provenance — anyone can see exactly how results were produced\nPortable documents — the same .qmd source can render to HTML, PDF, DOCX, slides, and more\nVersion control compatibility — plain-text files integrate perfectly with Git\nEasy collaboration — clean syntax, consistent formatting, and shared environments\nOpen science readiness — perfect for publishing reproducible reports on GitHub Pages, Zenodo, or institutional archives\n\nIn short: Quarto turns scientific documents into reproducible research artifacts, strengthening transparency and accelerating collaboration.",
+    "crumbs": [
+      "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto</span>"
+    ]
+  },
+  {
+    "objectID": "docs/05_quarto.html#installation",
+    "href": "docs/05_quarto.html#installation",
+    "title": "Quarto",
+    "section": "Installation",
+    "text": "Installation\nInstallation instructions are available from: https://quarto.org/docs/get-started/.\nThe installation can be tested with\nquarto --help",
     "crumbs": [
       "<span class='chapter-number'>5</span>  <span class='chapter-title'>Quarto</span>"
     ]

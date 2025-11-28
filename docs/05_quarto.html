@@ -214,6 +214,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul>
   <li><a href="#what-is-quarto" id="toc-what-is-quarto" class="nav-link active" data-scroll-target="#what-is-quarto">What is <strong>Quarto</strong>?</a></li>
   <li><a href="#why-quarto" id="toc-why-quarto" class="nav-link" data-scroll-target="#why-quarto">Why <strong>Quarto</strong>?</a></li>
+  <li><a href="#installation" id="toc-installation" class="nav-link" data-scroll-target="#installation">Installation</a></li>
   <li><a href="#exercise-create-a-basic-quarto-document" id="toc-exercise-create-a-basic-quarto-document" class="nav-link" data-scroll-target="#exercise-create-a-basic-quarto-document">Exercise: <strong>Create a Basic Quarto Document</strong></a></li>
   <li><a href="#exercise-cite-references-with-zotero-bbt" id="toc-exercise-cite-references-with-zotero-bbt" class="nav-link" data-scroll-target="#exercise-cite-references-with-zotero-bbt">Exercise: <strong>Cite References with Zotero / BBT</strong></a></li>
   <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
@@ -275,6 +276,12 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 </ul>
 <p>In short: <strong>Quarto turns scientific documents into reproducible research artifacts</strong>, strengthening transparency and accelerating collaboration.</p>
 </section>
+<section id="installation" class="level2">
+<h2 class="anchored" data-anchor-id="installation">Installation</h2>
+<p>Installation instructions are available from: <a href="https://quarto.org/docs/get-started/">https://quarto.org/docs/get-started/</a>.</p>
+<p>The installation can be tested with</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="ex">quarto</span> <span class="at">--help</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
 <section id="exercise-create-a-basic-quarto-document" class="level2">
 <h2 class="anchored" data-anchor-id="exercise-create-a-basic-quarto-document">Exercise: <strong>Create a Basic Quarto Document</strong></h2>
 <p><strong>Goal:</strong> Learn how to create a simple reproducible Quarto report.</p>
@@ -282,9 +289,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li><p>Open the example <code>examples/quarto/report.qmd</code> and instect the content.</p></li>
 <li><p>Render the document:</p>
-<pre><code>uv quarto render examples/quarto/python_example.qmd</code></pre></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb2"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> quarto render examples/quarto/python_example.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Use the preview functionality:</p>
-<pre><code>uv quarto preview examples/quarto/python_example.qmd</code></pre></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> quarto preview examples/quarto/python_example.qmd</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 </ol>
 <p><strong>Outcome:</strong> You have created a fully reproducible report with integrated code and figures.</p>
 </section>
@@ -295,9 +302,9 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <ol type="1">
 <li><p>Export your Zotero collection via <strong>Better BibTeX</strong> as <code>references.bib</code>.</p></li>
 <li><p>In your YAML header, add:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb3"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode yaml code-with-copy"><code class="sourceCode yaml"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="fu">bibliography</span><span class="kw">:</span><span class="at"> references.bib</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Cite something in the text:</p>
-<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a>As shown in @smith2021, citation management is seamless.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode markdown code-with-copy"><code class="sourceCode markdown"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a>As shown in @smith2021, citation management is seamless.</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
 <li><p>Render the document and verify the bibliography appears at the end.</p></li>
 </ol>
 <p><strong>Outcome:</strong> You can now use structured, reproducible citations in Quarto.</p>
