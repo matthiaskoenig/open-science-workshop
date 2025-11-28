@@ -1,4 +1,139 @@
 # Quarto {#sec-quarto}
 
+## What is **Quarto**?
+
+**Quarto** is an open-source scientific and technical publishing system that lets you create **beautiful, reproducible, and fully integrated documents**—from simple Markdown reports to complex books, websites, interactive notebooks, and presentations.
+
+Developed by **Posit** (formerly RStudio), Quarto is designed to unify code, text, figures, citations, and computational workflows in a single, transparent format.
+
+At a glance, Quarto is:
+
+* **Reproducible**
+  — integrates code execution (Python, R, Julia, Observable JS), ensuring outputs and figures are always up to date
+* **Flexible**
+  — produce PDFs, HTML documents, slides, books, scientific manuscripts, apps, dashboards, and websites
+* **Simple**
+  — Markdown-based syntax that remains readable even without rendering
+* **Fully programmable**
+  — supports Jupyter, knitr, and executable notebooks
+* **Integrated with the scientific ecosystem**
+  — works seamlessly with Zotero, BibTeX, Typst, Pandoc, Git, and Zenodo
+* **Open and extensible**
+  — customizable templates, filters, and Lua extensions
+* **Publication-ready**
+  — ideal for reproducible reports, dynamic analyses, teaching materials, and scientific communication
+
+Quarto brings together what researchers often struggle to combine: documentation, computation, citation, formatting, and publishing—into one coherent workflow.
+
+{{< video https://www.youtube.com/embed/_20US068pzk >}}
+
+## Why **Quarto**?
+
+Scientific writing is often fragmented: code in Jupyter notebooks, figures exported by hand, citations in reference managers, and reports assembled in Word or LaTeX. This leads to broken pipelines, inconsistent results, and irreproducible outputs.
+
+Quarto solves these problems by providing:
+
+* **Executable documents**
+  — the analysis, text, and figures live in the same file
+* **Reproducible workflows**
+  — every figure and result can be regenerated with one command
+* **Transparent provenance**
+  — anyone can see exactly how results were produced
+* **Portable documents**
+  — the same `.qmd` source can render to HTML, PDF, DOCX, slides, and more
+* **Version control compatibility**
+  — plain-text files integrate perfectly with Git
+* **Easy collaboration**
+  — clean syntax, consistent formatting, and shared environments
+* **Open science readiness**
+  — perfect for publishing reproducible reports on GitHub Pages, Zenodo, or institutional archives
+
+In short: **Quarto turns scientific documents into reproducible research artifacts**, strengthening transparency and accelerating collaboration.
+
+
+## Exercise: **Create a Basic Quarto Document**
+
+**Goal:**
+Learn how to create a simple reproducible Quarto report.
+
+**Instructions:**
+
+1. Create a file named `report.qmd`.
+2. Add the following content:
+
+   <!-- 
+   ---
+   title: "My First Quarto Report"
+   format: html
+   execute: true
+   ---
+
+   ## Introduction
+
+   This is a simple Quarto document created during the workshop.
+
+   ## A Figure
+
+   ```{python}
+   import matplotlib.pyplot as plt
+   plt.plot([1, 2, 3, 4])
+   plt.title("Example Plot")
+   plt.show()
+   ``` 
+   -->
+
+3. Render the document:
+
+   ```
+   uv quarto render report.qmd
+   ```
+
+**Outcome:**
+You have created a fully reproducible report with integrated code and figures.
+
+
+## Exercise: **Cite References with Zotero / BBT**
+
+**Goal:**
+Use your Zotero library inside Quarto.
+
+**Instructions:**
+
+1. Export your Zotero collection via **Better BibTeX** as `references.bib`.
+
+2. In your YAML header, add:
+
+   ```yaml
+   bibliography: references.bib
+   ```
+
+3. Cite something in the text:
+
+   ```markdown
+   As shown in @smith2021, citation management is seamless.
+   ```
+
+4. Render the document and verify the bibliography appears at the end.
+
+**Outcome:**
+You can now use structured, reproducible citations in Quarto.
+
+
+## Further Reading
+
+* **Quarto Documentation**
+  [https://quarto.org/docs/](https://quarto.org/docs/)
+* **Quarto Guide for Python**
+  [https://quarto.org/docs/computations/python.html](https://quarto.org/docs/computations/python.html)
+* **Authoring with Citations**
+  [https://quarto.org/docs/authoring/citations.html](https://quarto.org/docs/authoring/citations.html)
+* **Quarto + Jupyter Notebooks**
+  [https://quarto.org/docs/computations/jupyter.html](https://quarto.org/docs/computations/jupyter.html)
+* **Publishing Quarto Projects**
+  [https://quarto.org/docs/publishing/](https://quarto.org/docs/publishing/)
+* **Quarto GitHub Repository**
+  [https://github.com/quarto-dev/quarto-cli](https://github.com/quarto-dev/quarto-cli)
+
+
 ## Slides
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vQZ_fYjCddkTOANpYXNUF78DtKp-nNUeNIlxvaD-VoTotmVIEdA3aIUXjzKVT8OFroaTR3PzQmC7qDN/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
