@@ -20,6 +20,41 @@ ul.task-list li input[type="checkbox"] {
   margin: 0 0.8em 0.2em -1em; /* quarto-specific, see https://github.com/quarto-dev/quarto-cli/issues/4556 */ 
   vertical-align: middle;
 }
+/* CSS for syntax highlighting */
+html { -webkit-text-size-adjust: 100%; }
+pre > code.sourceCode { white-space: pre; position: relative; }
+pre > code.sourceCode > span { display: inline-block; line-height: 1.25; }
+pre > code.sourceCode > span:empty { height: 1.2em; }
+.sourceCode { overflow: visible; }
+code.sourceCode > span { color: inherit; text-decoration: inherit; }
+div.sourceCode { margin: 1em 0; }
+pre.sourceCode { margin: 0; }
+@media screen {
+div.sourceCode { overflow: auto; }
+}
+@media print {
+pre > code.sourceCode { white-space: pre-wrap; }
+pre > code.sourceCode > span { text-indent: -5em; padding-left: 5em; }
+}
+pre.numberSource code
+  { counter-reset: source-line 0; }
+pre.numberSource code > span
+  { position: relative; left: -4em; counter-increment: source-line; }
+pre.numberSource code > span > a:first-child::before
+  { content: counter(source-line);
+    position: relative; left: -1em; text-align: right; vertical-align: baseline;
+    border: none; display: inline-block;
+    -webkit-touch-callout: none; -webkit-user-select: none;
+    -khtml-user-select: none; -moz-user-select: none;
+    -ms-user-select: none; user-select: none;
+    padding: 0 4px; width: 4em;
+  }
+pre.numberSource { margin-left: 3em;  padding-left: 4px; }
+div.sourceCode
+  {   }
+@media screen {
+pre > code.sourceCode > span > a:first-child::before { text-decoration: underline; }
+}
 </style>
 
 
@@ -74,6 +109,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta name="twitter:title" content="Typst – Open Science Workshop">
+<meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -176,7 +212,12 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#slides" id="toc-slides" class="nav-link active" data-scroll-target="#slides">Slides</a></li>
+  <li><a href="#what-is-typst" id="toc-what-is-typst" class="nav-link active" data-scroll-target="#what-is-typst">What is <strong>Typst</strong>?</a></li>
+  <li><a href="#why-typst" id="toc-why-typst" class="nav-link" data-scroll-target="#why-typst">Why <strong>Typst</strong>?</a></li>
+  <li><a href="#exercise-create-a-simple-typst-document" id="toc-exercise-create-a-simple-typst-document" class="nav-link" data-scroll-target="#exercise-create-a-simple-typst-document">Exercise: <strong>Create a Simple Typst Document</strong></a></li>
+  <li><a href="#exercise-use-zotero-bbt-with-typst" id="toc-exercise-use-zotero-bbt-with-typst" class="nav-link" data-scroll-target="#exercise-use-zotero-bbt-with-typst">Exercise: <strong>Use Zotero / BBT with Typst</strong></a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
+  <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   </ul>
 </nav>
     </div>
@@ -202,6 +243,72 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
+<section id="what-is-typst" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-typst">What is <strong>Typst</strong>?</h2>
+<p><strong>Typst</strong> is a modern, fast, and expressive typesetting system designed for scientific and technical writing. Created as a next-generation alternative to LaTeX, Typst brings together <strong>beautiful typography</strong>, <strong>a clean declarative syntax</strong>, and <strong>full programmability</strong>—all with instant preview and reproducible builds.</p>
+<p>At a glance, Typst is:</p>
+<ul>
+<li><strong>Fast and interactive</strong> — instant rendering, live preview, no compilation delays</li>
+<li><strong>Easy to learn</strong> — clean, markdown-like syntax with intuitive layout rules</li>
+<li><strong>Programmable</strong> — functions, variables, conditional logic, and reusable components</li>
+<li><strong>Perfect for scientific writing</strong> — equations, figures, citations, cross-references, bibliographies</li>
+<li><strong>Reproducible &amp; portable</strong> — lightweight files, deterministic rendering, excellent integration with version control</li>
+<li><strong>Modern and open</strong> — open-source, actively developed, and built for today’s research workflows</li>
+<li><strong>Flexible</strong> — templates, custom styles, academic layouts, posters, reports, manuscripts</li>
+</ul>
+<p>Typst provides the precision of LaTeX with the readability of Markdown—making high-quality scientific documents easier, faster, and more reproducible.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/kI2e0o3sIVM" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
+</section>
+<section id="why-typst" class="level2">
+<h2 class="anchored" data-anchor-id="why-typst">Why <strong>Typst</strong>?</h2>
+<p>Traditional scientific writing tools often create friction: LaTeX can be overly complex, Word is hard to version control, and PDF exports often break reproducibility. Typst solves these issues by providing a modern, unified, and researcher-friendly writing platform.</p>
+<p>Typst is valuable because it offers:</p>
+<ul>
+<li><strong>A gentle learning curve</strong> — write immediately; extend only when needed</li>
+<li><strong>Clean, readable syntax for collaboration</strong> — ideal for teams, students, and reproducible teaching materials</li>
+<li><strong>Beautiful default typography</strong> — professional results without wrestling with packages</li>
+<li><strong>Reliable citations &amp; references</strong> — integrates seamlessly with Zotero / Better BibTeX</li>
+<li><strong>Transparent document structure</strong> — no hidden formatting, no brittle copy-paste styles</li>
+<li><strong>Ease of sharing &amp; archiving</strong> — plain-text <code>.typ</code> documents work perfectly with Git and Zenodo</li>
+<li><strong>Integration with Quarto, GitHub, and modern workflows</strong> — perfect for dynamic documents, reproducible pipelines, or scientific publishing</li>
+</ul>
+<p>In short, <strong>Typst gives you professional-quality documents without LaTeX’s complexity and without Word’s unpredictability</strong>, making it ideal for open and reproducible research.</p>
+</section>
+<section id="exercise-create-a-simple-typst-document" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-create-a-simple-typst-document">Exercise: <strong>Create a Simple Typst Document</strong></h2>
+<p><strong>Goal:</strong> Learn how to create and compile a basic Typst file.</p>
+<p><strong>Instructions:</strong></p>
+<ol type="1">
+<li><p>Install Typst or use <strong>typst.app</strong> (browser version).</p></li>
+<li><p>Create a new file: <code>main.typ</code></p></li>
+<li><p>Work through the “Writing in Typst” tutorial: <a href="https://typst.app/docs/tutorial/writing-in-typst/">https://typst.app/docs/tutorial/writing-in-typst/</a></p></li>
+<li><p>Render the document using the Typst compiler or online preview.</p></li>
+</ol>
+<p><strong>Outcome:</strong> You have created a fully functioning Typst document.</p>
+</section>
+<section id="exercise-use-zotero-bbt-with-typst" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-use-zotero-bbt-with-typst">Exercise: <strong>Use Zotero / BBT with Typst</strong></h2>
+<p><strong>Goal:</strong> Connect your reference manager to Typst.</p>
+<p><strong>Instructions:</strong></p>
+<ol type="1">
+<li><p>Export your Zotero library (Better BibTeX → <code>references.bib</code>).</p></li>
+<li><p>In your <code>main.typ</code>, add:</p>
+<div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb1"><pre class="sourceCode typst code-with-copy"><code class="sourceCode typst"><span id="cb1-1"><a href="#cb1-1" aria-hidden="true" tabindex="-1"></a><span class="kw">#</span>bibliography<span class="op">(</span><span class="st">"references.bib"</span><span class="op">)</span></span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div></li>
+<li><p>Cite an entry e.g.&nbsp;<code>@smith2020</code>, <code>@doe2023</code></p></li>
+<li><p>Render the document and verify the bibliography at the end.</p></li>
+</ol>
+<p><strong>Outcome:</strong> You can now cite literature reliably and reproducibly within Typst.</p>
+</section>
+<section id="further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>Typst Documentation</strong> <a href="https://typst.app/docs/">https://typst.app/docs/</a></li>
+<li><strong>Typst Tutorial</strong> <a href="https://typst.app/docs/tutorial/">https://typst.app/docs/tutorial/</a></li>
+<li><strong>Typst for Academic Writing</strong> <a href="https://typst.app/docs/reference/">https://typst.app/docs/reference/</a></li>
+<li><strong>Typst + Zotero (Better BibTeX)</strong> <a href="https://typst.app/docs/tutorial/bibliographies/">https://typst.app/docs/tutorial/bibliographies/</a></li>
+<li><strong>Typst GitHub Repository</strong> <a href="https://github.com/typst/typst">https://github.com/typst/typst</a></li>
+</ul>
+</section>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTYmiYhhTSUnVwIdTmMkodJKSm0NHvdU2kECU_QQN4lRA9GH3I9DgMJTwBjVFiinC1-F52oeBxESuR1/pubembed?start=false&amp;loop=false&amp;delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true">

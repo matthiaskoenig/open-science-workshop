@@ -284,6 +284,66 @@
     "href": "docs/04_typst.html",
     "title": "Typst",
     "section": "",
+    "text": "What is Typst?\nTypst is a modern, fast, and expressive typesetting system designed for scientific and technical writing. Created as a next-generation alternative to LaTeX, Typst brings together beautiful typography, a clean declarative syntax, and full programmability—all with instant preview and reproducible builds.\nAt a glance, Typst is:\nTypst provides the precision of LaTeX with the readability of Markdown—making high-quality scientific documents easier, faster, and more reproducible.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typst</span>"
+    ]
+  },
+  {
+    "objectID": "docs/04_typst.html#what-is-typst",
+    "href": "docs/04_typst.html#what-is-typst",
+    "title": "Typst",
+    "section": "",
+    "text": "Fast and interactive — instant rendering, live preview, no compilation delays\nEasy to learn — clean, markdown-like syntax with intuitive layout rules\nProgrammable — functions, variables, conditional logic, and reusable components\nPerfect for scientific writing — equations, figures, citations, cross-references, bibliographies\nReproducible & portable — lightweight files, deterministic rendering, excellent integration with version control\nModern and open — open-source, actively developed, and built for today’s research workflows\nFlexible — templates, custom styles, academic layouts, posters, reports, manuscripts",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typst</span>"
+    ]
+  },
+  {
+    "objectID": "docs/04_typst.html#why-typst",
+    "href": "docs/04_typst.html#why-typst",
+    "title": "Typst",
+    "section": "Why Typst?",
+    "text": "Why Typst?\nTraditional scientific writing tools often create friction: LaTeX can be overly complex, Word is hard to version control, and PDF exports often break reproducibility. Typst solves these issues by providing a modern, unified, and researcher-friendly writing platform.\nTypst is valuable because it offers:\n\nA gentle learning curve — write immediately; extend only when needed\nClean, readable syntax for collaboration — ideal for teams, students, and reproducible teaching materials\nBeautiful default typography — professional results without wrestling with packages\nReliable citations & references — integrates seamlessly with Zotero / Better BibTeX\nTransparent document structure — no hidden formatting, no brittle copy-paste styles\nEase of sharing & archiving — plain-text .typ documents work perfectly with Git and Zenodo\nIntegration with Quarto, GitHub, and modern workflows — perfect for dynamic documents, reproducible pipelines, or scientific publishing\n\nIn short, Typst gives you professional-quality documents without LaTeX’s complexity and without Word’s unpredictability, making it ideal for open and reproducible research.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typst</span>"
+    ]
+  },
+  {
+    "objectID": "docs/04_typst.html#exercise-create-a-simple-typst-document",
+    "href": "docs/04_typst.html#exercise-create-a-simple-typst-document",
+    "title": "Typst",
+    "section": "Exercise: Create a Simple Typst Document",
+    "text": "Exercise: Create a Simple Typst Document\nGoal: Learn how to create and compile a basic Typst file.\nInstructions:\n\nInstall Typst or use typst.app (browser version).\nCreate a new file: main.typ\nWork through the “Writing in Typst” tutorial: https://typst.app/docs/tutorial/writing-in-typst/\nRender the document using the Typst compiler or online preview.\n\nOutcome: You have created a fully functioning Typst document.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typst</span>"
+    ]
+  },
+  {
+    "objectID": "docs/04_typst.html#exercise-use-zotero-bbt-with-typst",
+    "href": "docs/04_typst.html#exercise-use-zotero-bbt-with-typst",
+    "title": "Typst",
+    "section": "Exercise: Use Zotero / BBT with Typst",
+    "text": "Exercise: Use Zotero / BBT with Typst\nGoal: Connect your reference manager to Typst.\nInstructions:\n\nExport your Zotero library (Better BibTeX → references.bib).\nIn your main.typ, add:\n#bibliography(\"references.bib\")\nCite an entry e.g. @smith2020, @doe2023\nRender the document and verify the bibliography at the end.\n\nOutcome: You can now cite literature reliably and reproducibly within Typst.",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typst</span>"
+    ]
+  },
+  {
+    "objectID": "docs/04_typst.html#further-reading",
+    "href": "docs/04_typst.html#further-reading",
+    "title": "Typst",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nTypst Documentation https://typst.app/docs/\nTypst Tutorial https://typst.app/docs/tutorial/\nTypst for Academic Writing https://typst.app/docs/reference/\nTypst + Zotero (Better BibTeX) https://typst.app/docs/tutorial/bibliographies/\nTypst GitHub Repository https://github.com/typst/typst",
+    "crumbs": [
+      "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typst</span>"
+    ]
+  },
+  {
+    "objectID": "docs/04_typst.html#slides",
+    "href": "docs/04_typst.html#slides",
+    "title": "Typst",
+    "section": "Slides",
     "text": "Slides",
     "crumbs": [
       "<span class='chapter-number'>4</span>  <span class='chapter-title'>Typst</span>"
