@@ -1,4 +1,21 @@
 # Zotero {#sec-zotero}
 
+
+
+## Run a pubmed search and import the entries in zenodo
+
+
+
+## Add the zenodo item to zotero
+
+
+## Zotero integration with google docs
+
+
+
+## Use the 
+
+
+
 ## Slides
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vSXYynCu_yO9RObS35062yMfR-s7nRkU0b3k3UiVHIT-IrqKhlKrr1fTl1jc51l1q23sJcxZ_6D-NWF/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>

@@ -1,4 +1,129 @@
 # Zenodo {#sec-zenodo}
 
+## What is **Zenodo**?
+
+**Zenodo** is an open, community-driven research repository developed by **CERN** and supported by the **OpenAIRE** initiative.
+It enables researchers to **publish, preserve, and cite** all types of research outputs — datasets, software, models, workflows, posters, presentations, reports, and more.
+
+At a glance, Zenodo is:
+
+* **A trusted long-term archive**
+  — hosted by CERN with robust, sustainable infrastructure
+* **A DOI provider for *any* research output**
+  — instantly creates a **citable DOI** for code, data, models, and documents
+* **Open science by design**
+  — supports FAIR principles (Findable, Accessible, Interoperable, Reusable)
+* **Flexible**
+  — accepts any file type up to large file sizes (50 GB+ with community support)
+* **Versioned**
+  — every upload can be updated, with automatic versioning and concept DOIs
+* **Integrated with GitHub**
+  — one-click archiving of releases for fully reproducible software citations
+* **Free**
+  — no fees, open access, global reach
+
+Zenodo ensures that your research outputs are **accessible, preserved, and formally citable**, supporting transparent and reproducible scientific workflows.
+
+
+{{< video https://www.youtube.com/embed/GMHRalMTjcY >}}
+
+
+## Why **Zenodo**?
+
+Zenodo plays a crucial role in making research **open, reusable, and citable**.
+In many projects, important research assets—datasets, code, simulation models, project reports—remain on personal computers, institutional servers, or private GitHub repositories. These materials are often invisible, inaccessible, and unreferenced in publications.
+
+Zenodo solves these problems by providing:
+
+* **Persistent identifiers (DOIs)**
+  — making your datasets, software, and models citable in journals and grant reports
+* **Long-term preservation**
+  — CERN-backed archival storage ensures your work remains accessible years later
+* **Transparent versioning**
+  — old versions remain available, while a “concept DOI” captures the entire version history
+* **Open sharing without barriers**
+  — no institutional account required; upload anything from anywhere
+* **Improved reproducibility**
+  — readers can access the exact code/data used in an analysis
+* **Compliance with open-science requirements**
+  — many funders and journals require FAIR, citable data and software
+* **Easy integration with GitHub**
+  — publish GitHub releases automatically to Zenodo for software citation
+
+In short: **Zenodo bridges the gap between doing research and reliably sharing it**, enabling others to reuse, verify, and build on your work.
+
+
+## Exercise: **Upload to Zenodo**
+
+**Goal:**
+Learn how to publish a research asset (dataset, figure, script, or model) on Zenodo and obtain a DOI.
+
+**Instructions:**
+
+1. Go to **[https://zenodo.org](https://zenodo.org)** and sign in (GitHub, ORCID, or CERN account recommended).
+2. Click **Upload** → **New Upload**.
+3. Drag and drop any small example file (PDF, text file, script, figure, etc.).
+4. Fill in the required metadata:
+
+   * **Title** (e.g., “Workshop Example Upload”)
+   * **Authors**
+   * **Description**
+   * **Keywords**
+   * **License** (e.g., CC-BY-4.0 or MIT)
+5. Choose whether you want the upload to be **public** or **restricted**.
+6. Click **Publish** to finalize the upload.
+7. Zenodo will generate a **DOI** — copy it into your notes.
+8. Optional: update the record with a second version to explore **versioning**.
+
+**Outcome:**
+You have created a FAIR, citable research object with a persistent DOI.
+
+
+## Exercise: **Activate GitHub Integration**
+
+{{< video https://www.youtube.com/embed/0CwVdUdA6T0 >}}
+
+**Goal:**
+Automatically archive GitHub releases on Zenodo and obtain DOIs for software.
+
+**Prerequisites:**
+A GitHub repository where you have write access.
+
+**Instructions:**
+
+1. Go to **[https://zenodo.org/account/settings/github/](https://zenodo.org/account/settings/github/)**.
+2. Click **Connect your GitHub account** (if not already done).
+3. Zenodo will display a list of your GitHub repositories.
+4. Toggle **ON** the repository you want to archive.
+5. Go to GitHub → open the selected repository.
+6. Create a new release:
+
+   * Click **Releases** → **Draft a new release**
+   * Tag: `v1.0.0`
+   * Title: “Initial Zenodo Release”
+   * Click **Publish release**
+7. Wait ~10–30 seconds and reload your Zenodo dashboard.
+8. A new Zenodo record will appear automatically with:
+
+   * a **versioned DOI** (for the release)
+   * a **concept DOI** (for the software archive as a whole)
+
+**Outcome:**
+Your software repository is now fully citable and releases are archived automatically at Zenodo.
+
+## Further Reading
+
+* **Zenodo Documentation**
+  [https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content](https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content)
+* **Zenodo GitHub Integration Guide**
+  [https://docs.zenodo.org/en/latest/integrations/github/](https://docs.zenodo.org/en/latest/integrations/github/)
+* **FAIR Principles (Wilkinson et al., 2016)**
+  [https://www.nature.com/articles/sdata201618](https://www.nature.com/articles/sdata201618)
+* **OpenAIRE & Zenodo**
+  [https://www.openaire.eu/zenodo](https://www.openaire.eu/zenodo)
+* **Citable Code and Data Best Practices**
+  [https://software-citation.github.io/](https://software-citation.github.io/)
+
+
 ## Slides
 <iframe src="https://docs.google.com/presentation/d/e/2PACX-1vTxksO28taj_Xvjgvo-p94VGzT01ZxtLmx9Fks8EHnFf3QIu_3qQDroBQEv0ER5_28vbCXLzUz9r3wT/pubembed?start=false&loop=false&delayms=3000" frameborder="0" width="480" height="299" allowfullscreen="true" mozallowfullscreen="true" webkitallowfullscreen="true"></iframe>
