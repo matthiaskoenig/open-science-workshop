@@ -114,67 +114,7 @@
     "href": "docs/01_uv.html#inspect-the-environment",
     "title": "uv",
     "section": "Inspect the Environment",
-    "text": "Inspect the Environment",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
-    ]
-  },
-  {
-    "objectID": "docs/01_uv.html#list-installed-packages",
-    "href": "docs/01_uv.html#list-installed-packages",
-    "title": "uv",
-    "section": "🔍 List installed packages",
-    "text": "🔍 List installed packages\nuv pip list",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
-    ]
-  },
-  {
-    "objectID": "docs/01_uv.html#show-the-dependency-tree",
-    "href": "docs/01_uv.html#show-the-dependency-tree",
-    "title": "uv",
-    "section": "🔍 Show the dependency tree",
-    "text": "🔍 Show the dependency tree\nuv tree\n\n❓ Explore\n\nWhich packages are direct dependencies?\nWhich ones are transitive?",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
-    ]
-  },
-  {
-    "objectID": "docs/01_uv.html#add-remove-and-re-add-a-dependency",
-    "href": "docs/01_uv.html#add-remove-and-re-add-a-dependency",
-    "title": "uv",
-    "section": "Add, Remove, and Re-Add a Dependency",
-    "text": "Add, Remove, and Re-Add a Dependency",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
-    ]
-  },
-  {
-    "objectID": "docs/01_uv.html#a-add-a-new-package-example-pandas",
-    "href": "docs/01_uv.html#a-add-a-new-package-example-pandas",
-    "title": "uv",
-    "section": "📌 A — Add a new package (example: pandas)",
-    "text": "📌 A — Add a new package (example: pandas)\nuv add pandas\nCheck:\nuv pip list\nuv tree",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
-    ]
-  },
-  {
-    "objectID": "docs/01_uv.html#b-remove-the-package",
-    "href": "docs/01_uv.html#b-remove-the-package",
-    "title": "uv",
-    "section": "📌 B — Remove the package",
-    "text": "📌 B — Remove the package\nuv remove pandas\nThen verify:\nuv pip list\nuv tree",
-    "crumbs": [
-      "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
-    ]
-  },
-  {
-    "objectID": "docs/01_uv.html#c-add-it-again-cached",
-    "href": "docs/01_uv.html#c-add-it-again-cached",
-    "title": "uv",
-    "section": "📌 C — Add it again (cached!)",
-    "text": "📌 C — Add it again (cached!)\nuv add pandas\n\n❓ Observations\n\nWas the second installation faster? Why?\nDid the lockfile and pyproject update correctly?\n\n\n\nRunning Python Through uv\nuv allows running commands in the environment without activation:\nuv run python\nFor instance we can execute the Hello World script.\nuv run src/osw/hello_world.py\nIn the pyproject.toml the script was registered and can be executed via\nuv run hello_world\n\n\n❓ Explore\n\nDoes uv run inside the correct environment?\nHow does this feel compared to activating the environment via source .venv/bin/activate?",
+    "text": "Inspect the Environment\n\n🔍 List installed packages\nuv pip list\n\n\n🔍 Show the dependency tree\nuv tree\n\n\n❓ Explore\n\nWhich packages are direct dependencies?\nWhich ones are transitive?\n\n\n\nAdd, Remove, and Re-Add a Dependency\n\n\nA — Add a new package (example: pandas)\nuv add pandas\nCheck:\nuv pip list\nuv tree\n\n\nB — Remove the package\nuv remove pandas\nThen verify:\nuv pip list\nuv tree\n\n\nC — Add it again (cached!)\nuv add pandas\n\n\n❓ Observations\n\nWas the second installation faster? Why?\nDid the lockfile and pyproject update correctly?\n\n\n\nRunning Python Through uv\nuv allows running commands in the environment without activation:\nuv run python\nFor instance we can execute the Hello World script.\nuv run src/osw/hello_world.py\nIn the pyproject.toml the script was registered and can be executed via\nuv run hello_world\n\n\n❓ Explore\n\nDoes uv run inside the correct environment?\nHow does this feel compared to activating the environment via source .venv/bin/activate?",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
     ]
@@ -184,7 +124,7 @@
     "href": "docs/01_uv.html#further-reading",
     "title": "uv",
     "section": "Further Reading",
-    "text": "Further Reading\n\nOfficial site: https://docs.astral.sh/uv/\nGitHub: https://github.com/astral-sh/uv\nRuff formatter/linter (same authors): https://github.com/astral-sh/ruff –&gt;",
+    "text": "Further Reading\n\nOfficial site: https://docs.astral.sh/uv/\nGitHub: https://github.com/astral-sh/uv\nDataCamp Tutorial: https://www.datacamp.com/tutorial/python-uv?dc_referrer=https%3A%2F%2Fduckduckgo.com%2F",
     "crumbs": [
       "<span class='chapter-number'>1</span>  <span class='chapter-title'>uv</span>"
     ]

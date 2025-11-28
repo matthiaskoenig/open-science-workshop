@@ -78,7 +78,7 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
 <link href="../site_libs/quarto-html/quarto-syntax-highlighting-587c61ba64f3a5504c4d52d930310e48.css" rel="stylesheet" id="quarto-text-highlighting-styles">
 <script src="../site_libs/bootstrap/bootstrap.min.js"></script>
 <link href="../site_libs/bootstrap/bootstrap-icons.css" rel="stylesheet">
-<link href="../site_libs/bootstrap/bootstrap-ee351b0b8dc48237a8ed16d58fc2de03.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
+<link href="../site_libs/bootstrap/bootstrap-0dd2bd5de344125cf763a379ddc3eb04.min.css" rel="stylesheet" append-hash="true" id="quarto-bootstrap" data-mode="light">
 <script id="quarto-search-options" type="application/json">{
   "location": "sidebar",
   "copy-button": false,
@@ -223,17 +223,15 @@ pre > code.sourceCode > span > a:first-child::before { text-decoration: underlin
   <ul class="collapse">
   <li><a href="#explore" id="toc-explore" class="nav-link" data-scroll-target="#explore">❓ Explore</a></li>
   </ul></li>
-  <li><a href="#inspect-the-environment" id="toc-inspect-the-environment" class="nav-link" data-scroll-target="#inspect-the-environment">Inspect the Environment</a></li>
+  <li><a href="#inspect-the-environment" id="toc-inspect-the-environment" class="nav-link" data-scroll-target="#inspect-the-environment">Inspect the Environment</a>
+  <ul class="collapse">
   <li><a href="#list-installed-packages" id="toc-list-installed-packages" class="nav-link" data-scroll-target="#list-installed-packages">🔍 List installed packages</a></li>
-  <li><a href="#show-the-dependency-tree" id="toc-show-the-dependency-tree" class="nav-link" data-scroll-target="#show-the-dependency-tree">🔍 Show the dependency tree</a>
-  <ul class="collapse">
+  <li><a href="#show-the-dependency-tree" id="toc-show-the-dependency-tree" class="nav-link" data-scroll-target="#show-the-dependency-tree">🔍 Show the dependency tree</a></li>
   <li><a href="#explore-1" id="toc-explore-1" class="nav-link" data-scroll-target="#explore-1">❓ Explore</a></li>
-  </ul></li>
   <li><a href="#add-remove-and-re-add-a-dependency" id="toc-add-remove-and-re-add-a-dependency" class="nav-link" data-scroll-target="#add-remove-and-re-add-a-dependency">Add, Remove, and Re-Add a Dependency</a></li>
-  <li><a href="#a-add-a-new-package-example-pandas" id="toc-a-add-a-new-package-example-pandas" class="nav-link" data-scroll-target="#a-add-a-new-package-example-pandas">📌 A — Add a new package (example: <code>pandas</code>)</a></li>
-  <li><a href="#b-remove-the-package" id="toc-b-remove-the-package" class="nav-link" data-scroll-target="#b-remove-the-package">📌 B — Remove the package</a></li>
-  <li><a href="#c-add-it-again-cached" id="toc-c-add-it-again-cached" class="nav-link" data-scroll-target="#c-add-it-again-cached">📌 C — Add it again (cached!)</a>
-  <ul class="collapse">
+  <li><a href="#a-add-a-new-package-example-pandas" id="toc-a-add-a-new-package-example-pandas" class="nav-link" data-scroll-target="#a-add-a-new-package-example-pandas">A — Add a new package (example: <code>pandas</code>)</a></li>
+  <li><a href="#b-remove-the-package" id="toc-b-remove-the-package" class="nav-link" data-scroll-target="#b-remove-the-package">B — Remove the package</a></li>
+  <li><a href="#c-add-it-again-cached" id="toc-c-add-it-again-cached" class="nav-link" data-scroll-target="#c-add-it-again-cached">C — Add it again (cached!)</a></li>
   <li><a href="#observations" id="toc-observations" class="nav-link" data-scroll-target="#observations">❓ Observations</a></li>
   <li><a href="#running-python-through-uv" id="toc-running-python-through-uv" class="nav-link" data-scroll-target="#running-python-through-uv">Running Python Through uv</a></li>
   <li><a href="#explore-2" id="toc-explore-2" class="nav-link" data-scroll-target="#explore-2">❓ Explore</a></li>
@@ -343,14 +341,14 @@ Figure&nbsp;1: uv output
 </section>
 <section id="inspect-the-environment" class="level2">
 <h2 class="anchored" data-anchor-id="inspect-the-environment">Inspect the Environment</h2>
-</section>
-<section id="list-installed-packages" class="level2">
-<h2 class="anchored" data-anchor-id="list-installed-packages">🔍 List installed packages</h2>
+<section id="list-installed-packages" class="level3">
+<h3 class="anchored" data-anchor-id="list-installed-packages">🔍 List installed packages</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb4"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb4-1"><a href="#cb4-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> pip list</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="show-the-dependency-tree" class="level2">
-<h2 class="anchored" data-anchor-id="show-the-dependency-tree">🔍 Show the dependency tree</h2>
+<section id="show-the-dependency-tree" class="level3">
+<h3 class="anchored" data-anchor-id="show-the-dependency-tree">🔍 Show the dependency tree</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb5"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb5-1"><a href="#cb5-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> tree</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
 <section id="explore-1" class="level3">
 <h3 class="anchored" data-anchor-id="explore-1">❓ Explore</h3>
 <ul>
@@ -358,27 +356,27 @@ Figure&nbsp;1: uv output
 <li>Which ones are transitive?</li>
 </ul>
 </section>
+<section id="add-remove-and-re-add-a-dependency" class="level3">
+<h3 class="anchored" data-anchor-id="add-remove-and-re-add-a-dependency">Add, Remove, and Re-Add a Dependency</h3>
 </section>
-<section id="add-remove-and-re-add-a-dependency" class="level2">
-<h2 class="anchored" data-anchor-id="add-remove-and-re-add-a-dependency">Add, Remove, and Re-Add a Dependency</h2>
-</section>
-<section id="a-add-a-new-package-example-pandas" class="level2">
-<h2 class="anchored" data-anchor-id="a-add-a-new-package-example-pandas">📌 A — Add a new package (example: <code>pandas</code>)</h2>
+<section id="a-add-a-new-package-example-pandas" class="level3">
+<h3 class="anchored" data-anchor-id="a-add-a-new-package-example-pandas">A — Add a new package (example: <code>pandas</code>)</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb6"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb6-1"><a href="#cb6-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> add pandas</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Check:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb7"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb7-1"><a href="#cb7-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> pip list</span>
 <span id="cb7-2"><a href="#cb7-2" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> tree</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="b-remove-the-package" class="level2">
-<h2 class="anchored" data-anchor-id="b-remove-the-package">📌 B — Remove the package</h2>
+<section id="b-remove-the-package" class="level3">
+<h3 class="anchored" data-anchor-id="b-remove-the-package">B — Remove the package</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb8"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb8-1"><a href="#cb8-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> remove pandas</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 <p>Then verify:</p>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb9"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb9-1"><a href="#cb9-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> pip list</span>
 <span id="cb9-2"><a href="#cb9-2" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> tree</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
 </section>
-<section id="c-add-it-again-cached" class="level2">
-<h2 class="anchored" data-anchor-id="c-add-it-again-cached">📌 C — Add it again (cached!)</h2>
+<section id="c-add-it-again-cached" class="level3">
+<h3 class="anchored" data-anchor-id="c-add-it-again-cached">C — Add it again (cached!)</h3>
 <div class="code-copy-outer-scaffold"><div class="sourceCode" id="cb10"><pre class="sourceCode bash code-with-copy"><code class="sourceCode bash"><span id="cb10-1"><a href="#cb10-1" aria-hidden="true" tabindex="-1"></a><span class="ex">uv</span> add pandas</span></code></pre></div><button title="Copy to Clipboard" class="code-copy-button"><i class="bi"></i></button></div>
+</section>
 <section id="observations" class="level3">
 <h3 class="anchored" data-anchor-id="observations">❓ Observations</h3>
 <ul>
@@ -408,7 +406,7 @@ Figure&nbsp;1: uv output
 <ul>
 <li>Official site: <a href="https://docs.astral.sh/uv/">https://docs.astral.sh/uv/</a></li>
 <li>GitHub: <a href="https://github.com/astral-sh/uv">https://github.com/astral-sh/uv</a></li>
-<li>Ruff formatter/linter (same authors): <a href="https://github.com/astral-sh/ruff">https://github.com/astral-sh/ruff</a> –&gt;</li>
+<li>DataCamp Tutorial: <a href="https://www.datacamp.com/tutorial/python-uv?dc_referrer=https%3A%2F%2Fduckduckgo.com%2F">https://www.datacamp.com/tutorial/python-uv?dc_referrer=https%3A%2F%2Fduckduckgo.com%2F</a></li>
 </ul>
 </section>
 <section id="slides" class="level2">
