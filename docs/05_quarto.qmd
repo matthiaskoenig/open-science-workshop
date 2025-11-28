@@ -50,6 +50,13 @@ Quarto solves these problems by providing:
 
 In short: **Quarto turns scientific documents into reproducible research artifacts**, strengthening transparency and accelerating collaboration.
 
+## Installation
+Installation instructions are available from: [https://quarto.org/docs/get-started/](https://quarto.org/docs/get-started/).
+
+The installation can be tested with 
+```bash
+quarto --help
+```
 
 ## Exercise: **Create a Basic Quarto Document**
 
@@ -62,12 +69,12 @@ Learn how to create a simple reproducible Quarto report.
 
 2. Render the document:
 
-   ```
+   ```bash
    uv quarto render examples/quarto/python_example.qmd
    ```
 3. Use the preview functionality:
 
-   ```
+   ```bash
    uv quarto preview examples/quarto/python_example.qmd
    ```
 

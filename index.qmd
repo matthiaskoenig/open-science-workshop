@@ -14,6 +14,8 @@ This workshop addresses these challenges by providing **a practical, hands-on in
 
 The workshop is made possible through support from the **Open Science Ambassador Program at the Berlin University Alliance (BUA)**, which aims to empower researchers to adopt open, FAIR, and reproducible practices across all phases of the research lifecycle.
 
+All workshop material is available from [https://github.com/matthiaskoenig/open-science-workshop](https://github.com/matthiaskoenig/open-science-workshop).
+
 ## 🎯 Workshop Goals
 
 By the end of the day, participants will:
