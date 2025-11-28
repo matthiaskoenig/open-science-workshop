@@ -4,3 +4,4 @@
 __pycache__
 *.pyc
 src/open_science_workshop.egg-info
+_book
