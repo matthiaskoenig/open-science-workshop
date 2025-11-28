@@ -58,34 +58,17 @@ Learn how to create a simple reproducible Quarto report.
 
 **Instructions:**
 
-1. Create a file named `report.qmd`.
-2. Add the following content:
+1. Open the example `examples/quarto/report.qmd` and instect the content.
 
-   <!-- 
-   ---
-   title: "My First Quarto Report"
-   format: html
-   execute: true
-   ---
-
-   ## Introduction
-
-   This is a simple Quarto document created during the workshop.
-
-   ## A Figure
-
-   ```{python}
-   import matplotlib.pyplot as plt
-   plt.plot([1, 2, 3, 4])
-   plt.title("Example Plot")
-   plt.show()
-   ``` 
-   -->
-
-3. Render the document:
+2. Render the document:
 
    ```
-   uv quarto render report.qmd
+   uv quarto render examples/quarto/python_example.qmd
+   ```
+3. Use the preview functionality:
+
+   ```
+   uv quarto preview examples/quarto/python_example.qmd
    ```
 
 **Outcome:**

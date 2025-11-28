@@ -1,0 +1,18 @@
+   ---
+   title: "My First Quarto Report"
+   format: html
+   execute: true
+   ---
+
+   ## Introduction
+
+   This is a simple Quarto document created during the workshop.
+
+   ## A Figure
+
+   ```{python}
+   import matplotlib.pyplot as plt
+   plt.plot([1, 2, 3, 4])
+   plt.title("Example Plot")
+   plt.show()
+   ``` 
