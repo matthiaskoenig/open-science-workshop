@@ -21,7 +21,7 @@ book:
   favicon: ./docs/images/osw.png
   twitter-card: true
   repo-url: https://github.com/matthiaskoenig/open-science-workshop.git
-  site-url: https://livermetabolism.com
+  site-url: https://matthiaskoenig.github.io/open-science-workshop
   # downloads: [pdf]
   
   sidebar:
