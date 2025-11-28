@@ -144,6 +144,66 @@
     "href": "docs/02_zenodo.html",
     "title": "Zenodo",
     "section": "",
+    "text": "What is Zenodo?\nZenodo is an open, community-driven research repository developed by CERN and supported by the OpenAIRE initiative. It enables researchers to publish, preserve, and cite all types of research outputs — datasets, software, models, workflows, posters, presentations, reports, and more.\nAt a glance, Zenodo is:\nZenodo ensures that your research outputs are accessible, preserved, and formally citable, supporting transparent and reproducible scientific workflows.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Zenodo</span>"
+    ]
+  },
+  {
+    "objectID": "docs/02_zenodo.html#what-is-zenodo",
+    "href": "docs/02_zenodo.html#what-is-zenodo",
+    "title": "Zenodo",
+    "section": "",
+    "text": "A trusted long-term archive — hosted by CERN with robust, sustainable infrastructure\nA DOI provider for any research output — instantly creates a citable DOI for code, data, models, and documents\nOpen science by design — supports FAIR principles (Findable, Accessible, Interoperable, Reusable)\nFlexible — accepts any file type up to large file sizes (50 GB+ with community support)\nVersioned — every upload can be updated, with automatic versioning and concept DOIs\nIntegrated with GitHub — one-click archiving of releases for fully reproducible software citations\nFree — no fees, open access, global reach",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Zenodo</span>"
+    ]
+  },
+  {
+    "objectID": "docs/02_zenodo.html#why-zenodo",
+    "href": "docs/02_zenodo.html#why-zenodo",
+    "title": "Zenodo",
+    "section": "Why Zenodo?",
+    "text": "Why Zenodo?\nZenodo plays a crucial role in making research open, reusable, and citable. In many projects, important research assets—datasets, code, simulation models, project reports—remain on personal computers, institutional servers, or private GitHub repositories. These materials are often invisible, inaccessible, and unreferenced in publications.\nZenodo solves these problems by providing:\n\nPersistent identifiers (DOIs) — making your datasets, software, and models citable in journals and grant reports\nLong-term preservation — CERN-backed archival storage ensures your work remains accessible years later\nTransparent versioning — old versions remain available, while a “concept DOI” captures the entire version history\nOpen sharing without barriers — no institutional account required; upload anything from anywhere\nImproved reproducibility — readers can access the exact code/data used in an analysis\nCompliance with open-science requirements — many funders and journals require FAIR, citable data and software\nEasy integration with GitHub — publish GitHub releases automatically to Zenodo for software citation\n\nIn short: Zenodo bridges the gap between doing research and reliably sharing it, enabling others to reuse, verify, and build on your work.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Zenodo</span>"
+    ]
+  },
+  {
+    "objectID": "docs/02_zenodo.html#exercise-upload-to-zenodo",
+    "href": "docs/02_zenodo.html#exercise-upload-to-zenodo",
+    "title": "Zenodo",
+    "section": "Exercise: Upload to Zenodo",
+    "text": "Exercise: Upload to Zenodo\nGoal: Learn how to publish a research asset (dataset, figure, script, or model) on Zenodo and obtain a DOI.\nInstructions:\n\nGo to https://zenodo.org and sign in (GitHub, ORCID, or CERN account recommended).\nClick Upload → New Upload.\nDrag and drop any small example file (PDF, text file, script, figure, etc.).\nFill in the required metadata:\n\nTitle (e.g., “Workshop Example Upload”)\nAuthors\nDescription\nKeywords\nLicense (e.g., CC-BY-4.0 or MIT)\n\nChoose whether you want the upload to be public or restricted.\nClick Publish to finalize the upload.\nZenodo will generate a DOI — copy it into your notes.\nOptional: update the record with a second version to explore versioning.\n\nOutcome: You have created a FAIR, citable research object with a persistent DOI.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Zenodo</span>"
+    ]
+  },
+  {
+    "objectID": "docs/02_zenodo.html#exercise-activate-github-integration",
+    "href": "docs/02_zenodo.html#exercise-activate-github-integration",
+    "title": "Zenodo",
+    "section": "Exercise: Activate GitHub Integration",
+    "text": "Exercise: Activate GitHub Integration\n\nGoal: Automatically archive GitHub releases on Zenodo and obtain DOIs for software.\nPrerequisites: A GitHub repository where you have write access.\nInstructions:\n\nGo to https://zenodo.org/account/settings/github/.\nClick Connect your GitHub account (if not already done).\nZenodo will display a list of your GitHub repositories.\nToggle ON the repository you want to archive.\nGo to GitHub → open the selected repository.\nCreate a new release:\n\nClick Releases → Draft a new release\nTag: v1.0.0\nTitle: “Initial Zenodo Release”\nClick Publish release\n\nWait ~10–30 seconds and reload your Zenodo dashboard.\nA new Zenodo record will appear automatically with:\n\na versioned DOI (for the release)\na concept DOI (for the software archive as a whole)\n\n\nOutcome: Your software repository is now fully citable and releases are archived automatically at Zenodo.",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Zenodo</span>"
+    ]
+  },
+  {
+    "objectID": "docs/02_zenodo.html#further-reading",
+    "href": "docs/02_zenodo.html#further-reading",
+    "title": "Zenodo",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nZenodo Documentation https://docs.github.com/en/repositories/archiving-a-github-repository/referencing-and-citing-content\nZenodo GitHub Integration Guide https://docs.zenodo.org/en/latest/integrations/github/\nFAIR Principles (Wilkinson et al., 2016) https://www.nature.com/articles/sdata201618\nOpenAIRE & Zenodo https://www.openaire.eu/zenodo\nCitable Code and Data Best Practices https://software-citation.github.io/",
+    "crumbs": [
+      "<span class='chapter-number'>2</span>  <span class='chapter-title'>Zenodo</span>"
+    ]
+  },
+  {
+    "objectID": "docs/02_zenodo.html#slides",
+    "href": "docs/02_zenodo.html#slides",
+    "title": "Zenodo",
+    "section": "Slides",
     "text": "Slides",
     "crumbs": [
       "<span class='chapter-number'>2</span>  <span class='chapter-title'>Zenodo</span>"
@@ -154,6 +214,46 @@
     "href": "docs/03_zotero.html",
     "title": "Zotero",
     "section": "",
+    "text": "Run a pubmed search and import the entries in zenodo",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zotero</span>"
+    ]
+  },
+  {
+    "objectID": "docs/03_zotero.html#add-the-zenodo-item-to-zotero",
+    "href": "docs/03_zotero.html#add-the-zenodo-item-to-zotero",
+    "title": "Zotero",
+    "section": "Add the zenodo item to zotero",
+    "text": "Add the zenodo item to zotero",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zotero</span>"
+    ]
+  },
+  {
+    "objectID": "docs/03_zotero.html#zotero-integration-with-google-docs",
+    "href": "docs/03_zotero.html#zotero-integration-with-google-docs",
+    "title": "Zotero",
+    "section": "Zotero integration with google docs",
+    "text": "Zotero integration with google docs",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zotero</span>"
+    ]
+  },
+  {
+    "objectID": "docs/03_zotero.html#use-the",
+    "href": "docs/03_zotero.html#use-the",
+    "title": "Zotero",
+    "section": "Use the",
+    "text": "Use the",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zotero</span>"
+    ]
+  },
+  {
+    "objectID": "docs/03_zotero.html#slides",
+    "href": "docs/03_zotero.html#slides",
+    "title": "Zotero",
+    "section": "Slides",
     "text": "Slides",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zotero</span>"
