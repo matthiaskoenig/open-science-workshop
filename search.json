@@ -214,37 +214,57 @@
     "href": "docs/03_zotero.html",
     "title": "Zotero",
     "section": "",
-    "text": "Run a pubmed search and import the entries in zenodo",
+    "text": "What is Zotero?\nZotero is a free, open-source reference manager designed to help researchers collect, organize, cite, and share literature and research materials. Developed by the Roy Rosenzweig Center for History and New Media, it is widely used across disciplines for managing bibliographies and integrating citations into documents.\nAt a glance, Zotero is:\nZotero offers a single, unified place to manage all your literature and citations, making it easy to stay organized and produce clean, consistent bibliographies.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zotero</span>"
     ]
   },
   {
-    "objectID": "docs/03_zotero.html#add-the-zenodo-item-to-zotero",
-    "href": "docs/03_zotero.html#add-the-zenodo-item-to-zotero",
+    "objectID": "docs/03_zotero.html#what-is-zotero",
+    "href": "docs/03_zotero.html#what-is-zotero",
     "title": "Zotero",
-    "section": "Add the zenodo item to zotero",
-    "text": "Add the zenodo item to zotero",
+    "section": "",
+    "text": "Easy to use — drag-and-drop PDFs, automatic metadata extraction, browser connector for one-click imports\nOrganized and flexible — collections, tags, saved searches, and built-in PDF annotation\nIntegrated with all major writing tools — Word, LibreOffice, Google Docs, Typst, LaTeX, Quarto\nCollaborative — group libraries for teams, projects, and courses\nExtensible — a large plugin ecosystem (Zotfile, Better BibTeX, mdnotes, Zeta Bibliotheca, etc.)\nOpen and free — transparent, community-driven, no subscription required",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zotero</span>"
     ]
   },
   {
-    "objectID": "docs/03_zotero.html#zotero-integration-with-google-docs",
-    "href": "docs/03_zotero.html#zotero-integration-with-google-docs",
+    "objectID": "docs/03_zotero.html#why-zotero",
+    "href": "docs/03_zotero.html#why-zotero",
     "title": "Zotero",
-    "section": "Zotero integration with google docs",
-    "text": "Zotero integration with google docs",
+    "section": "Why Zotero?",
+    "text": "Why Zotero?\nManaging literature manually quickly becomes chaotic: PDFs scattered in folders, inconsistent naming, missing metadata, and manual citation formatting errors. Zotero provides structure and automation that dramatically improves research workflows.\nZotero is essential because it provides:\n\nCentralized reference management — one library for all papers, books, datasets, websites, and reports\nAccurate, consistent citations — thousands of CSL citation styles with automatic formatting\nBetter collaboration — shared libraries for teams, labs, or course groups\nA reproducible workflow — stable identifiers, consistent metadata, export formats for manuscripts and analysis pipelines\nIntegration with open science tools — seamless use with Typst, Quarto, LaTeX, R Markdown, and more\nA research memory — annotations, notes, and tags that help track insights and connections\n\nIn short, Zotero turns citation management from a burden into an organized, reliable part of your research workflow, enabling more reproducible and efficient writing.",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zotero</span>"
     ]
   },
   {
-    "objectID": "docs/03_zotero.html#use-the",
-    "href": "docs/03_zotero.html#use-the",
+    "objectID": "docs/03_zotero.html#exercise-import-references-into-zotero",
+    "href": "docs/03_zotero.html#exercise-import-references-into-zotero",
     "title": "Zotero",
-    "section": "Use the",
-    "text": "Use the",
+    "section": "Exercise: Import References into Zotero",
+    "text": "Exercise: Import References into Zotero\nGoal: Learn how to add research items to your Zotero library and organize them.\nInstructions:\n\nInstall Zotero and the Zotero Connector for your browser.\nOpen a research article (e.g., PubMed, arXiv, journal website).\nClick the Zotero browser connector button to import the reference.\nIn Zotero, check that the metadata looks correct.\nDrag the reference into a collection for today’s workshop.\nAdd a tag and write a short note summarizing the paper.\n\nOutcome: You have a structured, searchable reference in your Zotero library.\nBonus: Import the DOI you generated for your zenodo asset.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zotero</span>"
+    ]
+  },
+  {
+    "objectID": "docs/03_zotero.html#exercise-use-zotero-to-create-a-bibtex-bibliography",
+    "href": "docs/03_zotero.html#exercise-use-zotero-to-create-a-bibtex-bibliography",
+    "title": "Zotero",
+    "section": "Exercise: Use Zotero to create a bibtex bibliography",
+    "text": "Exercise: Use Zotero to create a bibtex bibliography\nGoal: Learn how to create a bibtex library.\nInstructions:\n\nInstall Better BibTeX (BBT) in Zotero.\nRight-click your collection → Export collection → choose Better BibLaTeX.\nSave the file as references.bib.\n\nOutcome: You can now use the Zotero references directly in your LaTEX or Typst documents.",
+    "crumbs": [
+      "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zotero</span>"
+    ]
+  },
+  {
+    "objectID": "docs/03_zotero.html#further-reading",
+    "href": "docs/03_zotero.html#further-reading",
+    "title": "Zotero",
+    "section": "Further Reading",
+    "text": "Further Reading\n\nZotero Official Documentation https://www.zotero.org/support/\nZotero Connector Guides https://www.zotero.org/support/getting_stuff_into_your_library\nBetter BibTeX (BBT) Documentation https://retorque.re/zotero-better-bibtex/\nARIA: Intelligent research and analysis https://github.com/lifan0127/ai-research-assistant\nZotero + Typst guide https://typst.app/docs/tutorial/bibliographies/\nZotero + Quarto documentation https://quarto.org/docs/authoring/citations.html",
     "crumbs": [
       "<span class='chapter-number'>3</span>  <span class='chapter-title'>Zotero</span>"
     ]

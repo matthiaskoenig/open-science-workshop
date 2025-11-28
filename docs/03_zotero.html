@@ -74,6 +74,7 @@ ul.task-list li input[type="checkbox"] {
 
 
 <meta name="twitter:title" content="Zotero – Open Science Workshop">
+<meta name="twitter:description" content="">
 <meta name="twitter:card" content="summary">
 </head>
 
@@ -176,10 +177,11 @@ ul.task-list li input[type="checkbox"] {
     <h2 id="toc-title">Table of contents</h2>
    
   <ul>
-  <li><a href="#run-a-pubmed-search-and-import-the-entries-in-zenodo" id="toc-run-a-pubmed-search-and-import-the-entries-in-zenodo" class="nav-link active" data-scroll-target="#run-a-pubmed-search-and-import-the-entries-in-zenodo">Run a pubmed search and import the entries in zenodo</a></li>
-  <li><a href="#add-the-zenodo-item-to-zotero" id="toc-add-the-zenodo-item-to-zotero" class="nav-link" data-scroll-target="#add-the-zenodo-item-to-zotero">Add the zenodo item to zotero</a></li>
-  <li><a href="#zotero-integration-with-google-docs" id="toc-zotero-integration-with-google-docs" class="nav-link" data-scroll-target="#zotero-integration-with-google-docs">Zotero integration with google docs</a></li>
-  <li><a href="#use-the" id="toc-use-the" class="nav-link" data-scroll-target="#use-the">Use the</a></li>
+  <li><a href="#what-is-zotero" id="toc-what-is-zotero" class="nav-link active" data-scroll-target="#what-is-zotero">What is <strong>Zotero</strong>?</a></li>
+  <li><a href="#why-zotero" id="toc-why-zotero" class="nav-link" data-scroll-target="#why-zotero">Why <strong>Zotero</strong>?</a></li>
+  <li><a href="#exercise-import-references-into-zotero" id="toc-exercise-import-references-into-zotero" class="nav-link" data-scroll-target="#exercise-import-references-into-zotero">Exercise: <strong>Import References into Zotero</strong></a></li>
+  <li><a href="#exercise-use-zotero-to-create-a-bibtex-bibliography" id="toc-exercise-use-zotero-to-create-a-bibtex-bibliography" class="nav-link" data-scroll-target="#exercise-use-zotero-to-create-a-bibtex-bibliography">Exercise: <strong>Use Zotero to create a bibtex bibliography</strong></a></li>
+  <li><a href="#further-reading" id="toc-further-reading" class="nav-link" data-scroll-target="#further-reading">Further Reading</a></li>
   <li><a href="#slides" id="toc-slides" class="nav-link" data-scroll-target="#slides">Slides</a></li>
   </ul>
 </nav>
@@ -206,17 +208,71 @@ ul.task-list li input[type="checkbox"] {
 </header>
 
 
-<section id="run-a-pubmed-search-and-import-the-entries-in-zenodo" class="level2">
-<h2 class="anchored" data-anchor-id="run-a-pubmed-search-and-import-the-entries-in-zenodo">Run a pubmed search and import the entries in zenodo</h2>
+<section id="what-is-zotero" class="level2">
+<h2 class="anchored" data-anchor-id="what-is-zotero">What is <strong>Zotero</strong>?</h2>
+<p><strong>Zotero</strong> is a free, open-source reference manager designed to help researchers <strong>collect, organize, cite, and share</strong> literature and research materials. Developed by the <strong>Roy Rosenzweig Center for History and New Media</strong>, it is widely used across disciplines for managing bibliographies and integrating citations into documents.</p>
+<p>At a glance, Zotero is:</p>
+<ul>
+<li><strong>Easy to use</strong> — drag-and-drop PDFs, automatic metadata extraction, browser connector for one-click imports</li>
+<li><strong>Organized and flexible</strong> — collections, tags, saved searches, and built-in PDF annotation</li>
+<li><strong>Integrated with all major writing tools</strong> — Word, LibreOffice, Google Docs, Typst, LaTeX, Quarto</li>
+<li><strong>Collaborative</strong> — group libraries for teams, projects, and courses</li>
+<li><strong>Extensible</strong> — a large plugin ecosystem (Zotfile, Better BibTeX, mdnotes, Zeta Bibliotheca, etc.)</li>
+<li><strong>Open and free</strong> — transparent, community-driven, no subscription required</li>
+</ul>
+<p>Zotero offers a single, unified place to manage all your literature and citations, making it easy to stay organized and produce clean, consistent bibliographies.</p>
+<div class="quarto-video ratio ratio-16x9"><iframe data-external="1" src="https://www.youtube.com/embed/hmRkwi9rs38" title="" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen=""></iframe></div>
 </section>
-<section id="add-the-zenodo-item-to-zotero" class="level2">
-<h2 class="anchored" data-anchor-id="add-the-zenodo-item-to-zotero">Add the zenodo item to zotero</h2>
+<section id="why-zotero" class="level2">
+<h2 class="anchored" data-anchor-id="why-zotero">Why <strong>Zotero</strong>?</h2>
+<p>Managing literature manually quickly becomes chaotic: PDFs scattered in folders, inconsistent naming, missing metadata, and manual citation formatting errors. Zotero provides structure and automation that dramatically improves research workflows.</p>
+<p>Zotero is essential because it provides:</p>
+<ul>
+<li><strong>Centralized reference management</strong> — one library for all papers, books, datasets, websites, and reports</li>
+<li><strong>Accurate, consistent citations</strong> — thousands of CSL citation styles with automatic formatting</li>
+<li><strong>Better collaboration</strong> — shared libraries for teams, labs, or course groups</li>
+<li><strong>A reproducible workflow</strong> — stable identifiers, consistent metadata, export formats for manuscripts and analysis pipelines</li>
+<li><strong>Integration with open science tools</strong> — seamless use with Typst, Quarto, LaTeX, R Markdown, and more</li>
+<li><strong>A research memory</strong> — annotations, notes, and tags that help track insights and connections</li>
+</ul>
+<p>In short, <strong>Zotero turns citation management from a burden into an organized, reliable part of your research workflow</strong>, enabling more reproducible and efficient writing.</p>
 </section>
-<section id="zotero-integration-with-google-docs" class="level2">
-<h2 class="anchored" data-anchor-id="zotero-integration-with-google-docs">Zotero integration with google docs</h2>
+<section id="exercise-import-references-into-zotero" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-import-references-into-zotero">Exercise: <strong>Import References into Zotero</strong></h2>
+<p><strong>Goal:</strong> Learn how to add research items to your Zotero library and organize them.</p>
+<p><strong>Instructions:</strong></p>
+<ol type="1">
+<li>Install Zotero and the <strong>Zotero Connector</strong> for your browser.</li>
+<li>Open a research article (e.g., PubMed, arXiv, journal website).</li>
+<li>Click the <strong>Zotero browser connector</strong> button to import the reference.</li>
+<li>In Zotero, check that the metadata looks correct.</li>
+<li>Drag the reference into a collection for today’s workshop.</li>
+<li>Add a <strong>tag</strong> and write a short <strong>note</strong> summarizing the paper.</li>
+</ol>
+<p><strong>Outcome:</strong> You have a structured, searchable reference in your Zotero library.</p>
+<p><strong>Bonus:</strong> Import the DOI you generated for your zenodo asset.</p>
 </section>
-<section id="use-the" class="level2">
-<h2 class="anchored" data-anchor-id="use-the">Use the</h2>
+<section id="exercise-use-zotero-to-create-a-bibtex-bibliography" class="level2">
+<h2 class="anchored" data-anchor-id="exercise-use-zotero-to-create-a-bibtex-bibliography">Exercise: <strong>Use Zotero to create a bibtex bibliography</strong></h2>
+<p><strong>Goal:</strong> Learn how to create a bibtex library.</p>
+<p><strong>Instructions:</strong></p>
+<ol type="1">
+<li>Install <strong>Better BibTeX</strong> (BBT) in Zotero.</li>
+<li>Right-click your collection → <strong>Export collection</strong> → choose <code>Better BibLaTeX</code>.</li>
+<li>Save the file as <code>references.bib</code>.</li>
+</ol>
+<p><strong>Outcome:</strong> You can now use the Zotero references directly in your LaTEX or Typst documents.</p>
+</section>
+<section id="further-reading" class="level2">
+<h2 class="anchored" data-anchor-id="further-reading">Further Reading</h2>
+<ul>
+<li><strong>Zotero Official Documentation</strong> <a href="https://www.zotero.org/support/">https://www.zotero.org/support/</a></li>
+<li><strong>Zotero Connector Guides</strong> <a href="https://www.zotero.org/support/getting_stuff_into_your_library">https://www.zotero.org/support/getting_stuff_into_your_library</a></li>
+<li><strong>Better BibTeX (BBT) Documentation</strong> <a href="https://retorque.re/zotero-better-bibtex/">https://retorque.re/zotero-better-bibtex/</a></li>
+<li><strong>ARIA: Intelligent research and analysis</strong> <a href="https://github.com/lifan0127/ai-research-assistant">https://github.com/lifan0127/ai-research-assistant</a></li>
+<li><strong>Zotero + Typst guide</strong> <a href="https://typst.app/docs/tutorial/bibliographies/">https://typst.app/docs/tutorial/bibliographies/</a></li>
+<li><strong>Zotero + Quarto documentation</strong> <a href="https://quarto.org/docs/authoring/citations.html">https://quarto.org/docs/authoring/citations.html</a></li>
+</ul>
 </section>
 <section id="slides" class="level2">
 <h2 class="anchored" data-anchor-id="slides">Slides</h2>
