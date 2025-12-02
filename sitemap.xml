@@ -2,34 +2,38 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://matthiaskoenig.github.io/open-science-workshop/index.html</loc>
-    <lastmod>2025-12-02T10:05:47.712Z</lastmod>
+    <lastmod>2025-12-02T10:57:31.687Z</lastmod>
   </url>
   <url>
     <loc>https://matthiaskoenig.github.io/open-science-workshop/docs/01_uv.html</loc>
-    <lastmod>2025-12-02T10:05:47.678Z</lastmod>
+    <lastmod>2025-12-02T10:57:31.636Z</lastmod>
   </url>
   <url>
     <loc>https://matthiaskoenig.github.io/open-science-workshop/docs/02_zenodo.html</loc>
-    <lastmod>2025-12-02T10:05:47.678Z</lastmod>
+    <lastmod>2025-12-02T10:57:31.636Z</lastmod>
   </url>
   <url>
     <loc>https://matthiaskoenig.github.io/open-science-workshop/docs/03_zotero.html</loc>
-    <lastmod>2025-12-02T10:05:47.678Z</lastmod>
+    <lastmod>2025-12-02T10:57:31.636Z</lastmod>
   </url>
   <url>
     <loc>https://matthiaskoenig.github.io/open-science-workshop/docs/04_typst.html</loc>
-    <lastmod>2025-12-02T10:05:47.678Z</lastmod>
+    <lastmod>2025-12-02T10:57:31.636Z</lastmod>
   </url>
   <url>
     <loc>https://matthiaskoenig.github.io/open-science-workshop/docs/05_quarto.html</loc>
-    <lastmod>2025-12-02T10:05:47.678Z</lastmod>
+    <lastmod>2025-12-02T10:57:31.636Z</lastmod>
+  </url>
+  <url>
+    <loc>https://matthiaskoenig.github.io/open-science-workshop/docs/workshop2025.html</loc>
+    <lastmod>2025-12-02T10:57:31.687Z</lastmod>
   </url>
   <url>
     <loc>https://matthiaskoenig.github.io/open-science-workshop/docs/about.html</loc>
-    <lastmod>2025-12-02T10:05:47.678Z</lastmod>
+    <lastmod>2025-12-02T10:57:31.636Z</lastmod>
   </url>
   <url>
     <loc>https://matthiaskoenig.github.io/open-science-workshop/docs/code_of_conduct.html</loc>
-    <lastmod>2025-12-02T10:05:47.678Z</lastmod>
+    <lastmod>2025-12-02T10:57:31.636Z</lastmod>
   </url>
 </urlset>

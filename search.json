@@ -430,6 +430,76 @@
     ]
   },
   {
+    "objectID": "docs/workshop2025.html",
+    "href": "docs/workshop2025.html",
+    "title": "Workshop 2025",
+    "section": "",
+    "text": "A Diverse and Engaged Participants\nThe Open Science Workshop on 28 November 2025 at Humboldt-Universität zu Berlin was a clear success. Building on the program outlined in the official flyer—which introduced participants to reproducible computational workflows, environment management, citable research objects, professional publishing tools, and open dissemination practices —the workshop fostered both technical skill-building and community engagement across the Berlin University Alliance (BUA).\nA highlight of the workshop was the diversity of its participants. We brought together students, PhD researchers, postdocs, and early-career scientists from across:\nParticipants represented a wide range of disciplines, including computational proteomics, bioinformatics, chronobiology, molecular medicine, biophysics, geophysics, quantitative molecular biology, computational neuroscience, structural biology, and life science engineering.\nNotably, the workshop attracted many female participants from varied scientific backgrounds. This diversity enriched group work, discussions, and the exchange of perspectives on reproducibility and open science.",
+    "crumbs": [
+      "Workshop 2025"
+    ]
+  },
+  {
+    "objectID": "docs/workshop2025.html#a-diverse-and-engaged-participants",
+    "href": "docs/workshop2025.html#a-diverse-and-engaged-participants",
+    "title": "Workshop 2025",
+    "section": "",
+    "text": "Figure 1: Participants\n\n\n\n\n\nCharité – Universitätsmedizin Berlin (CHA)\nHumboldt-Universität zu Berlin (HU)\nTechnische Universität Berlin (TU)\nHTW Berlin\n\n\n\n\n\n\n\nFigure 2: University\n\n\n\n\n\n\n\n\n\n\nFigure 3: Qualification\n\n\n\n\n\n\n\n\n\n\nFigure 4: Gender",
+    "crumbs": [
+      "Workshop 2025"
+    ]
+  },
+  {
+    "objectID": "docs/workshop2025.html#interactive-and-practice-oriented-learning",
+    "href": "docs/workshop2025.html#interactive-and-practice-oriented-learning",
+    "title": "Workshop 2025",
+    "section": "Interactive and Practice-Oriented Learning",
+    "text": "Interactive and Practice-Oriented Learning\nThe program combined conceptual input with hands-on practice. The LEGO® Serious Play® session offered a creative, collaborative start, allowing participants to reflect on their experiences and challenges related to reproducibility.\nTechnical sessions then guided attendees through a modern open-science workflow:\n\nManaging Python environments with uv\nCreating citable research outputs with Zenodo\nReference management using Zotero\nCreating professional PDFs with Typst\nPublishing reproducible documents with Quarto\n\nThese sessions, as presented in the program (page 2 of the flyer) , enabled participants not only to learn about open science principles but to apply them directly within their own research contexts.",
+    "crumbs": [
+      "Workshop 2025"
+    ]
+  },
+  {
+    "objectID": "docs/workshop2025.html#learning-outcomes",
+    "href": "docs/workshop2025.html#learning-outcomes",
+    "title": "Workshop 2025",
+    "section": "Learning Outcomes",
+    "text": "Learning Outcomes\nA key outcome of the workshop was the significant improvement in participants’ knowledge and confidence across all technologies presented. Through hands-on exercises, guided demonstrations, and collaborative exploration, participants developed:\n\nA deeper understanding of reproducible computational workflows\nPractical skills in managing software environments and research assets\nCompetence in producing and disseminating open, citable scientific outputs\nAwareness of best practices for sustainable and transparent research\n\nBefore Workshop\n\n\n\n\n\n\nFigure 5: Status before workshop\n\n\n\nAfter Workshop\n\n\n\n\n\n\nFigure 6: Status after workshop\n\n\n\nWorkshop Outcomes\n\n\n\n\n\n\nFigure 7: Workshop outcomes\n\n\n\nThis strengthened foundation will support participants in embedding reproducible methods within their ongoing and future research projects.",
+    "crumbs": [
+      "Workshop 2025"
+    ]
+  },
+  {
+    "objectID": "docs/workshop2025.html#community-building-and-open-discussion",
+    "href": "docs/workshop2025.html#community-building-and-open-discussion",
+    "title": "Workshop 2025",
+    "section": "Community Building and Open Discussion",
+    "text": "Community Building and Open Discussion\nThe day closed with an open discussion and networking session, where participants exchanged ideas and explored opportunities for collaboration. Many expressed strong interest in future training on reproducible workflows, FAIR data, and open dissemination—an encouraging sign for strengthening open science practices across the BUA.",
+    "crumbs": [
+      "Workshop 2025"
+    ]
+  },
+  {
+    "objectID": "docs/workshop2025.html#outlook",
+    "href": "docs/workshop2025.html#outlook",
+    "title": "Workshop 2025",
+    "section": "Outlook",
+    "text": "Outlook\nThe workshop demonstrated that interest in open, transparent, and reproducible computational workflows is both high and growing. It successfully equipped participants with practical tools, fostered interdisciplinary exchange, and contributed to building a more connected and inclusive open-science community in Berlin.",
+    "crumbs": [
+      "Workshop 2025"
+    ]
+  },
+  {
+    "objectID": "docs/workshop2025.html#slides",
+    "href": "docs/workshop2025.html#slides",
+    "title": "Workshop 2025",
+    "section": "Slides",
+    "text": "Slides",
+    "crumbs": [
+      "Workshop 2025"
+    ]
+  },
+  {
     "objectID": "docs/about.html",
     "href": "docs/about.html",
     "title": "About",
