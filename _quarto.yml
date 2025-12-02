@@ -15,6 +15,7 @@ book:
     - ./docs/03_zotero.qmd
     - ./docs/04_typst.qmd
     - ./docs/05_quarto.qmd
+    - ./docs/workshop2025.qmd
     - ./docs/about.qmd
     - ./docs/code_of_conduct.qmd
 
