@@ -1,5 +1,0 @@
-- [ ] create webpage with quarto
-- [ ] zotero management of the litature
-    - [ ] add literature 10 quick tips writing, presentations, ...
-    - [ ] add links to web resources
-- [ ] uv example demo walk through
